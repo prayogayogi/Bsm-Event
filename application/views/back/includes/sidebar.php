@@ -8,7 +8,7 @@
 	<title>Admin | <?= $title; ?></title>
 
 	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/css/bootstrap.css">
-
+	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/vendors/simple-datatables/style.css">
 	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/vendors/chartjs/Chart.min.css">
 
 	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
@@ -31,8 +31,8 @@
 
 
 
-						<li class="sidebar-item active ">
-							<a href="index.html" class='sidebar-link'>
+						<li class="sidebar-item <?= (current_url() == base_url('Admin/Dashboard')) ? 'active' : '' ?>">
+							<a href="<?= base_url('Admin/Dashboard') ?>" class='sidebar-link'>
 								<i data-feather="home" width="20"></i>
 								<span>Dashboard</span>
 							</a>
@@ -40,10 +40,8 @@
 						</li>
 
 
-
-
-						<li class="sidebar-item">
-							<a href="#" class='sidebar-link'>
+						<li class="sidebar-item <?= (current_url() == base_url('Admin/Layanan')) ? 'active' : '' ?>">
+							<a href="<?= base_url('Admin/Layanan') ?>" class='sidebar-link'>
 								<i data-feather="triangle" width="20"></i>
 								<span>Layanan</span>
 							</a>
@@ -54,8 +52,8 @@
 
 
 
-						<li class="sidebar-item">
-							<a href="#" class='sidebar-link'>
+						<li class="sidebar-item <?= (current_url() == base_url('Admin/galery')) ? 'active' : '' ?>">
+							<a href="<?= base_url('Admin/galery') ?>" class='sidebar-link'>
 								<i data-feather="image" width="20"></i>
 								<span>Galery</span>
 							</a>

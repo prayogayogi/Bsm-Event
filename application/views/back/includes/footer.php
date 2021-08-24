@@ -14,6 +14,8 @@
 <script src="<?= base_url('public/assetAdmin/') ?>assets/js/feather-icons/feather.min.js"></script>
 <script src="<?= base_url('public/assetAdmin/') ?>assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="<?= base_url('public/assetAdmin/') ?>assets/js/app.js"></script>
+<script src="<?= base_url('public/assetAdmin/') ?>assets/vendors/simple-datatables/simple-datatables.js"></script>
+<script src="<?= base_url('public/assetAdmin/') ?>assets/js/vendors.js"></script>
 
 <script src="<?= base_url('public/assetAdmin/') ?>assets/vendors/chartjs/Chart.min.js"></script>
 <script src="<?= base_url('public/assetAdmin/') ?>assets/vendors/apexcharts/apexcharts.min.js"></script>
