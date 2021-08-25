@@ -89,6 +89,8 @@ class LayananModel extends CI_Model
 	// Untuk destroy data layanan
 	public function destroy($slug)
 	{
+		$foto = $this->db->get_where('tb_layanan', ['slug' => $slug])->row_array();
+		unlink(FCPATH . './public/image/layanan/' . $foto['foto']);
 		$this->db->where('slug', $slug);
 		$this->db->delete('tb_layanan');
 	}
