@@ -67,8 +67,8 @@
 							</a>
 						</li>
 
-						<li class="sidebar-item">
-							<a href="#" class='sidebar-link'>
+						<li class="sidebar-item  <?= (current_url() == base_url('Admin/Cilent')) ? 'active' : '' ?>">
+							<a href="<?= base_url('Admin/Cilent') ?>" class='sidebar-link'>
 								<i data-feather="hard-drive" width="20"></i>
 								<span>Cilent</span>
 							</a>
