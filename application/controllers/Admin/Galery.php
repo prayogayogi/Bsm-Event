@@ -6,7 +6,7 @@ class Galery extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model(['GaleryModel', 'GaleryModel']);
+		$this->load->model(['LayananModel', 'GaleryModel']);
 		$this->load->library('form_validation');
 	}
 
@@ -15,9 +15,10 @@ class Galery extends CI_Controller
 	{
 		$data['title'] = "Galery";
 		$data['index'] = $this->GaleryModel->index();
+		$data['service'] = $this->LayananModel->index();
 		$this->load->view('back/includes/sidebar', $data);
 		$this->load->view('back/includes/navbar');
-		$this->load->view('back/pages/app/galery/index');
+		$this->load->view('back/pages/app/galery/index', $data);
 		$this->load->view('back/includes/footer');
 	}
 
@@ -28,14 +29,15 @@ class Galery extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Galery";
 			$data['index'] = $this->GaleryModel->index();
+			$data['service'] = $this->LayananModel->index();
 			$this->load->view('back/includes/sidebar', $data);
 			$this->load->view('back/includes/navbar');
-			$this->load->view('back/pages/app/galery/index');
+			$this->load->view('back/pages/app/galery/index', $data);
 			$this->load->view('back/includes/footer');
 		} else {
 			$this->GaleryModel->store();
 			$this->session->set_flashdata('status', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-			<strong>Data Galery/strong> Berhasil Di Tambah.
+			<strong>Data Galery</strong> Berhasil Di Tambah.
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			</button>
@@ -45,13 +47,51 @@ class Galery extends CI_Controller
 	}
 
 	// Untuk edit data Galery
-	public function edit($slug)
+	public function edit($id)
 	{
 		$data['title'] = "Update Galery";
-		$data['index'] = $this->LayananModel->edit($slug);
+		$data['index'] = $this->GaleryModel->edit($id);
+		$data['service'] = $this->LayananModel->index();
 		$this->load->view('back/includes/sidebar', $data);
 		$this->load->view('back/includes/navbar');
-		$this->load->view('back/pages/mainMenu/galery/edit', $data);
+		$this->load->view('back/pages/app/galery/edit', $data);
 		$this->load->view('back/includes/footer');
+	}
+
+	// Update data galery
+	public function update($id)
+	{
+		$this->form_validation->set_rules('jenis', 'Jenis Layanan', 'trim');
+		if ($this->form_validation->run() == FALSE) {
+			$data['title'] = "Update Galery";
+			$data['index'] = $this->GaleryModel->edit($id);
+			$data['service'] = $this->LayananModel->index();
+			$this->load->view('back/includes/sidebar', $data);
+			$this->load->view('back/includes/navbar');
+			$this->load->view('back/pages/app/galery/edit', $data);
+			$this->load->view('back/includes/footer');
+		} else {
+			$this->GaleryModel->update($id);
+			$this->session->set_flashdata('status', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+			<strong>Data Galery</strong> Berhasil Di Update.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>');
+			redirect('Admin/Galery');
+		}
+	}
+
+	// Destroy data Galery
+	public function destroy($slug)
+	{
+		$this->GaleryModel->destroy($slug);
+		$this->session->set_flashdata('status', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Data Galery</strong> Berhasil Di Delete.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>');
+		redirect('Admin/Galery');
 	}
 }

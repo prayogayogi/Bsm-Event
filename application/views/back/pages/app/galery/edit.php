@@ -1,3 +1,4 @@
+<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 <div class="main-content container-fluid">
 	<div class="page-title">
 		<div class="row">
@@ -18,15 +19,26 @@
 	<section class="section">
 		<div class="card">
 			<div class="modal-body">
-				<!-- <form action="<?= base_url('Admin/Galery/update/') . $index['slug'];  ?>" method="post" enctype="multipart/form-data">
+				<form action="<?= base_url('Admin/Galery/update/') . $index['id'];  ?>" method="post" enctype="multipart/form-data">
 					<div class="row">
 						<div class="col col-lg-12">
 
 							<div class="form-group">
 								<label for="jenis">Jenis Galery</label>
-								<input type="text" name="jenis" class="form-control" id="jenis" value="<?= $index['jenis'] ?>" autocomplete="off">
+								<select class="form-control" name="jenis" id="inputGroupSelect02">
+									<option valu="<?= $index['jenis_id'] ?>"><?= $index['jenis_id'] ?></option>
+									<?php foreach ($service as $services) : ?>
+										<option value="<?= $services['jenis'] ?>"><?= $services['jenis'] ?></option>
+									<?php endforeach; ?>
+								</select>
 								<?= form_error('jenis', '<small class="text-danger ml-2">', '</small>') ?>
 							</div>
+
+							<!-- <div class="form-group">
+								<label for="jenis">Jenis Galery</label>
+								<input type="text" name="jenis" class="form-control" id="jenis" value="<?= $index['jenis_id'] ?>" autocomplete="off">
+								<?= form_error('jenis', '<small class="text-danger ml-2">', '</small>') ?>
+							</div> -->
 
 							<div class="row">
 								<div class="col col-4">
@@ -38,10 +50,6 @@
 								<div class="col">
 									<a href="http://" data-toggle="modal" data-backdrop="false" data-target="#detailFotoUpdate"><img src="<?= base_url('public/image/galery/') . $index['foto']; ?>" class="mt-4 mb-3 ml-3 img-thumbnail" alt="galery" width="70px"></a>
 								</div>
-							</div>
-							<div class="form-group">
-								<label for="deskripsi">Deskripsi</label>
-								<textarea name="deskripsi" id="snow" cols="10" rows="7" class="form-control" autocomplete="off"><?= $index['deskripsi'] ?></textarea>
 							</div>
 						</div>
 						<div class="modal-footer mt-3 pt-3">
@@ -55,7 +63,7 @@
 							</button>
 						</div>
 					</div>
-				</form> -->
+				</form>
 			</div>
 		</div>
 	</section>
@@ -63,12 +71,12 @@
 
 
 <!-- Modal Detail foto galery -->
-<!-- <div class="col-md-6 col-12">
+<div class="col-md-6 col-12">
 	<div class="modal fade text-left" id="detailFotoUpdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title" id="myModalLabel4">Detail foto</h4>
+					<h4 class="modal-title" id="myModalLabel4">Detail foto Galery</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<i data-feather="x"></i>
 					</button>
@@ -89,7 +97,7 @@
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>
 <!-- Akhir detail foto galery -->
 
 
