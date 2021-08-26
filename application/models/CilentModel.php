@@ -34,7 +34,7 @@ class CilentModel extends CI_Model
 		}
 
 		$data = [
-			'jenis' => $this->input->post('jenis', TRUE),
+			'nama_cilent' => $this->input->post('namaCilent', TRUE),
 			'foto' => $files,
 		];
 		$this->db->set($data);
@@ -71,7 +71,7 @@ class CilentModel extends CI_Model
 		}
 
 		$data = [
-			'jenis_id' => $this->input->post('jenis'),
+			'nama_cilent' => $this->input->post('namaCilent', TRUE),
 		];
 
 		$this->db->set($data);

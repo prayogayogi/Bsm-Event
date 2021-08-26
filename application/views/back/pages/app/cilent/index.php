@@ -5,7 +5,7 @@
 			<?= $this->session->flashdata('status');  ?>
 			<div class="col-12 col-md-6 order-md-1 order-last">
 				<h3>Cilent</h3>
-				<p class="text-subtitle text-muted">Cilent ini berisi berbagai jenis cilent yang kami sediakan.</p>
+				<p class="text-subtitle text-muted">Table ini berisi berbagai cilent yang mengunakan jasa kami.</p>
 			</div>
 			<div class="col-12 col-md-6 order-md-2 order-first">
 				<nav aria-label="breadcrumb" class='breadcrumb-header'>
@@ -26,7 +26,7 @@
 				<table class='table table-striped' id="table1">
 					<thead>
 						<tr>
-							<th>Jenis Cilent</th>
+							<th>Nama Cilent</th>
 							<th>Foto</th>
 							<th>Action</th>
 						</tr>
@@ -34,7 +34,7 @@
 					<tbody>
 						<?php foreach ($index as $indexs) : ?>
 							<tr>
-								<td><?= $indexs['jenis']; ?></td>
+								<td><?= $indexs['nama_cilent']; ?></td>
 								<td>
 									<a href="#" data-toggle="modal" data-backdrop="false" data-target="#detailFoto<?= $indexs['id'] ?>"> <img src="<?= base_url('public/image/cilent/') . $indexs['foto']; ?>" class="img-thumbnail" alt="cilent" width="50px"></a>
 								</td>
@@ -81,21 +81,16 @@
 							<div class="col col-lg-12 col-md-6">
 
 								<div class="form-group">
-									<label for="jenis">Jenis Cilent</label>
-									<select class="form-control" name="jenis" id="inputGroupSelect02">
-										<option>-- Pilih jenis layanan --</option>
-										<?php foreach ($service as $services) : ?>
-											<option value="<?= $services['jenis'] ?>"><?= $services['jenis'] ?></option>
-										<?php endforeach; ?>
-									</select>
-									<?= form_error('jenis', '<small class="text-danger ml-2">', '</small>') ?>
-								</div>
-
-								<div class="form-group">
 									<label for="foto">Foto</label>
 									<input type="file" name="foto" id="foto" class="form-control">
 									<p><small class="text-muted">File type: jpg, png</small></p>
 									<?= form_error('foto', '<small class="text-danger ml-2">', '</small>') ?>
+								</div>
+
+								<div class="form-group">
+									<label for="jenis">Nama Cilent</label>
+									<input type="text" name="namaCilent" class="form-control" id="jenis" value="<?= set_value('namaCilent'); ?>" placeholder="Masukan Nama Cilent" autocomplete="off">
+									<?= form_error('namaCilent', '<small class="text-danger ml-2">', '</small>') ?>
 								</div>
 
 							</div>

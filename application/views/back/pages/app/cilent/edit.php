@@ -23,23 +23,6 @@
 					<div class="row">
 						<div class="col col-lg-12">
 
-							<div class="form-group">
-								<label for="jenis">Jenis Cilent</label>
-								<select class="form-control" name="jenis" id="inputGroupSelect02">
-									<option valu="<?= $index['jenis'] ?>"><?= $index['jenis'] ?></option>
-									<?php foreach ($service as $services) : ?>
-										<option value="<?= $services['jenis'] ?>"><?= $services['jenis'] ?></option>
-									<?php endforeach; ?>
-								</select>
-								<?= form_error('jenis', '<small class="text-danger ml-2">', '</small>') ?>
-							</div>
-
-							<!-- <div class="form-group">
-								<label for="jenis">Jenis Cilent</label>
-								<input type="text" name="jenis" class="form-control" id="jenis" value="<?= $index['jenis_id'] ?>" autocomplete="off">
-								<?= form_error('jenis', '<small class="text-danger ml-2">', '</small>') ?>
-							</div> -->
-
 							<div class="row">
 								<div class="col col-4">
 									<div class="form-group">
@@ -51,6 +34,13 @@
 									<a href="http://" data-toggle="modal" data-backdrop="false" data-target="#detailFotoUpdate"><img src="<?= base_url('public/image/cilent/') . $index['foto']; ?>" class="mt-4 mb-3 ml-3 img-thumbnail" alt="cilent" width="70px"></a>
 								</div>
 							</div>
+
+							<div class="form-group">
+								<label for="jenis">Nama Cilent</label>
+								<input type="text" name="namaCilent" class="form-control" id="jenis" value="<?= $index['nama_cilent']; ?>" autocomplete="off">
+								<?= form_error('namaCilent', '<small class="text-danger ml-2">', '</small>') ?>
+							</div>
+
 						</div>
 						<div class="modal-footer mt-3 pt-3">
 							<a href="<?= base_url('Admin/Cilent') ?>" class="btn btn-secondary">
@@ -99,8 +89,3 @@
 	</div>
 </div>
 <!-- Akhir detail foto cilent -->
-
-
-<script>
-	CKEDITOR.replace('deskripsi');
-</script>

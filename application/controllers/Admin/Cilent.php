@@ -15,17 +15,16 @@ class Cilent extends CI_Controller
 	{
 		$data['title'] = "Cilent";
 		$data['index'] = $this->CilentModel->index();
-		$data['service'] = $this->LayananModel->index();
 		$this->load->view('back/includes/sidebar', $data);
 		$this->load->view('back/includes/navbar');
 		$this->load->view('back/pages/app/cilent/index', $data);
 		$this->load->view('back/includes/footer');
 	}
 
-	// Untuk store data galelry
+	// Untuk store data cilent
 	public function store()
 	{
-		$this->form_validation->set_rules('jenis', 'Jenis Layanan', 'required', ['required' => 'Jenis layanan harus di isi']);
+		$this->form_validation->set_rules('namaCilent', 'Nama Cilent', 'required', ['required' => 'Nama Cilent harus di isi']);
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Cilent";
 			$data['index'] = $this->CilentModel->index();
@@ -61,7 +60,7 @@ class Cilent extends CI_Controller
 	// Update data cilent
 	public function update($id)
 	{
-		$this->form_validation->set_rules('jenis', 'Jenis Layanan', 'trim');
+		$this->form_validation->set_rules('namaCilent', 'Nama Cilent', 'trim|required', ['required' => 'Nama Cilent harus di isi']);
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Update Cilent";
 			$data['index'] = $this->CilentModel->edit($id);
