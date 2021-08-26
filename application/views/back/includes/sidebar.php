@@ -60,8 +60,8 @@
 							</a>
 						</li>
 
-						<li class="sidebar-item">
-							<a href="#" class='sidebar-link'>
+						<li class="sidebar-item <?= (current_url() == base_url('Admin/Testimonial')) ? 'active' : '' ?>">
+							<a href="<?= base_url('Admin/Testimonial') ?>" class='sidebar-link'>
 								<i data-feather="database" width="20"></i>
 								<span>Testimonial</span>
 							</a>
