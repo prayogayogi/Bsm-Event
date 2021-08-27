@@ -6,8 +6,11 @@ class Layanan extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model(['LayananModel']);
+		$this->load->model(['LayananModel', 'UserAppModel']);
 		$this->load->library('form_validation');
+		if (!$this->session->userdata('email')) {
+			redirect('Login');
+		};
 	}
 
 	// Untuk get view layana
@@ -15,8 +18,9 @@ class Layanan extends CI_Controller
 	{
 		$data['title'] = "Layanan";
 		$data['index'] = $this->LayananModel->index();
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/mainMenu/layanan/index', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -25,13 +29,13 @@ class Layanan extends CI_Controller
 	public function store()
 	{
 		$this->form_validation->set_rules('jenis', 'Jenis Layanan', 'required', ['required' => 'Jenis layanan harus di isi']);
-		// $this->form_validation->set_rules('foto', 'Foto Layanan', 'required', ['required' => 'Foto harus di isi']);
 		$this->form_validation->set_rules('deskripsi', 'Deskripsi Layanan', 'required', ['required' => 'Deskripsi harus di isi']);
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Layanan";
 			$data['index'] = $this->LayananModel->index();
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/mainMenu/layanan/index', $data);
 			$this->load->view('back/includes/footer');
 		} else {
@@ -51,8 +55,9 @@ class Layanan extends CI_Controller
 	{
 		$data['title'] = "Update Layanan";
 		$data['index'] = $this->LayananModel->edit($slug);
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/mainMenu/layanan/edit', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -65,8 +70,9 @@ class Layanan extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Update Layanan";
 			$data['index'] = $this->LayananModel->edit($slug);
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/mainMenu/layanan/edit', $data);
 			$this->load->view('back/includes/footer');
 		} else {

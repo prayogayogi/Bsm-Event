@@ -6,8 +6,11 @@ class Profile extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model(['CompanyModel']);
+		$this->load->model(['CompanyModel', 'UserAppModel']);
 		$this->load->library('form_validation');
+		if (!$this->session->userdata('email')) {
+			redirect('Login');
+		};
 	}
 
 	// Untuk get view company profile
@@ -15,8 +18,9 @@ class Profile extends CI_Controller
 	{
 		$data['title'] = "Company Profile";
 		$data['getCompany'] = $this->CompanyModel->getCompany();
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/company/companyProfile/index', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -26,8 +30,9 @@ class Profile extends CI_Controller
 	{
 		$data['title'] = "Kontak";
 		$data['getKontak'] = $this->CompanyModel->getKontak();
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/company/kontak/index', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -41,8 +46,9 @@ class Profile extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Company";
 			$data['index'] = $this->CompanyModel->index();
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/mainMenu/company/index', $data);
 			$this->load->view('back/includes/footer');
 		} else {
@@ -68,8 +74,9 @@ class Profile extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Kontak";
 			$data['getKontak'] = $this->CompanyModel->getKontak();
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/company/kontak/index', $data);
 			$this->load->view('back/includes/footer');
 		} else {
@@ -89,8 +96,9 @@ class Profile extends CI_Controller
 	{
 		$data['title'] = "Update Kontak";
 		$data['index'] = $this->CompanyModel->editKontak($id);
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/company/kontak/edit', $data);
 		$this->load->view('back/includes/footer');
 	}

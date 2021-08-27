@@ -6,8 +6,11 @@ class UserApp extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model(['UserAppModel']);
+		$this->load->model(['UserAppModel', 'UserAppModel']);
 		$this->load->library('form_validation');
+		if (!$this->session->userdata('email')) {
+			redirect('Login');
+		};
 	}
 
 	// Untuk get view userapp
@@ -15,8 +18,9 @@ class UserApp extends CI_Controller
 	{
 		$data['title'] = "User App";
 		$data['index'] = $this->UserAppModel->index();
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/authentication/admin/index', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -31,8 +35,9 @@ class UserApp extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "User App";
 			$data['index'] = $this->UserAppModel->index();
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/authentication/admin/index', $data);
 			$this->load->view('back/includes/footer');
 		} else {
@@ -52,8 +57,9 @@ class UserApp extends CI_Controller
 	{
 		$data['title'] = "Update UserApp";
 		$data['index'] = $this->UserAppModel->edit($slug);
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/authentication/admin/edit', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -68,8 +74,9 @@ class UserApp extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Update User App";
 			$data['index'] = $this->UserAppModel->edit($slug);
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/authentication/admin/edit', $data);
 			$this->load->view('back/includes/footer');
 		} else {
@@ -89,8 +96,9 @@ class UserApp extends CI_Controller
 	{
 		$data['title'] = "Detail User App";
 		$data['index'] = $this->UserAppModel->show($slug);
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/authentication/admin/detail', $data);
 		$this->load->view('back/includes/footer');
 	}

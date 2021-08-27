@@ -6,8 +6,11 @@ class Testimonial extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model(['LayananModel', 'TestimonialModel']);
+		$this->load->model(['LayananModel', 'TestimonialModel', 'UserAppModel']);
 		$this->load->library('form_validation');
+		if (!$this->session->userdata('email')) {
+			redirect('Login');
+		};
 	}
 
 	// Untuk view testimonial
@@ -15,9 +18,10 @@ class Testimonial extends CI_Controller
 	{
 		$data['title'] = "Testimonial";
 		$data['index'] = $this->TestimonialModel->index();
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$data['service'] = $this->LayananModel->index();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/app/testimonial/index', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -29,9 +33,10 @@ class Testimonial extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Testimonial";
 			$data['index'] = $this->TestimonialModel->index();
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$data['service'] = $this->LayananModel->index();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/app/testimonial/index', $data);
 			$this->load->view('back/includes/footer');
 		} else {
@@ -51,9 +56,10 @@ class Testimonial extends CI_Controller
 	{
 		$data['title'] = "Update Testimonial";
 		$data['index'] = $this->TestimonialModel->edit($id);
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$data['service'] = $this->LayananModel->index();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/app/testimonial/edit', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -65,9 +71,10 @@ class Testimonial extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Update Testimonial";
 			$data['index'] = $this->TestimonialModel->edit($id);
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$data['service'] = $this->LayananModel->index();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/app/testimonial/edit', $data);
 			$this->load->view('back/includes/footer');
 		} else {

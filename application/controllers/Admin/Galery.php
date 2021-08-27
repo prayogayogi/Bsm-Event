@@ -6,8 +6,11 @@ class Galery extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model(['LayananModel', 'GaleryModel']);
+		$this->load->model(['LayananModel', 'GaleryModel', 'UserAppModel']);
 		$this->load->library('form_validation');
+		if (!$this->session->userdata('email')) {
+			redirect('Login');
+		};
 	}
 
 	// Untuk view galery
@@ -15,9 +18,10 @@ class Galery extends CI_Controller
 	{
 		$data['title'] = "Galery";
 		$data['index'] = $this->GaleryModel->index();
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$data['service'] = $this->LayananModel->index();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/app/galery/index', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -29,9 +33,10 @@ class Galery extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Galery";
 			$data['index'] = $this->GaleryModel->index();
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$data['service'] = $this->LayananModel->index();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/app/galery/index', $data);
 			$this->load->view('back/includes/footer');
 		} else {
@@ -51,9 +56,10 @@ class Galery extends CI_Controller
 	{
 		$data['title'] = "Update Galery";
 		$data['index'] = $this->GaleryModel->edit($id);
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$data['service'] = $this->LayananModel->index();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/app/galery/edit', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -65,9 +71,10 @@ class Galery extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Update Galery";
 			$data['index'] = $this->GaleryModel->edit($id);
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$data['service'] = $this->LayananModel->index();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/app/galery/edit', $data);
 			$this->load->view('back/includes/footer');
 		} else {

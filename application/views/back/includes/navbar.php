@@ -7,7 +7,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav d-flex align-items-center navbar-light ml-auto">
-				<li class="dropdown nav-icon">
+				<!-- <li class="dropdown nav-icon">
 					<a href="#" data-toggle="dropdown" class="nav-link  dropdown-toggle nav-link-lg nav-link-user">
 						<div class="d-lg-inline-block">
 							<i data-feather="bell"></i>
@@ -29,34 +29,18 @@
 							</li>
 						</ul>
 					</div>
-				</li>
-				<li class="dropdown nav-icon mr-2">
-					<a href="#" data-toggle="dropdown" class="nav-link  dropdown-toggle nav-link-lg nav-link-user">
-						<div class="d-lg-inline-block">
-							<i data-feather="mail"></i>
-						</div>
-					</a>
-					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="#"><i data-feather="user"></i> Account</a>
-						<a class="dropdown-item active" href="#"><i data-feather="mail"></i> Messages</a>
-						<a class="dropdown-item" href="#"><i data-feather="settings"></i> Settings</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#"><i data-feather="log-out"></i> Logout</a>
-					</div>
-				</li>
+				</li> -->
 				<li class="dropdown">
 					<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
 						<div class="avatar mr-1">
-							<img src="<?= base_url('public/assetAdmin/') ?>assets/images/avatar/avatar-s-1.png" alt="" srcset="">
+							<img src="<?= base_url('public/image/userApp/') . $userLogin['foto'] ?>" alt="" srcset="">
 						</div>
-						<div class="d-none d-md-block d-lg-inline-block">Hi, Saugi</div>
+						<div class="d-none d-md-block d-lg-inline-block">Hi, <?= $userLogin['nama']; ?></div>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
 						<a class="dropdown-item" href="#"><i data-feather="user"></i> Account</a>
-						<a class="dropdown-item active" href="#"><i data-feather="mail"></i> Messages</a>
-						<a class="dropdown-item" href="#"><i data-feather="settings"></i> Settings</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#"><i data-feather="log-out"></i> Logout</a>
+						<a class="dropdown-item" href="<?= base_url('Logout') ?>" onclick="return confirm('Yakin Ingin keluar..?')"><i data-feather="log-out"></i> Logout</a>
 					</div>
 				</li>
 			</ul>

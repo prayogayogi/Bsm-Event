@@ -34,12 +34,6 @@
 								<?= form_error('jenis', '<small class="text-danger ml-2">', '</small>') ?>
 							</div>
 
-							<!-- <div class="form-group">
-								<label for="jenis">Jenis Testimonial</label>
-								<input type="text" name="jenis" class="form-control" id="jenis" value="<?= $index['jenis_id'] ?>" autocomplete="off">
-								<?= form_error('jenis', '<small class="text-danger ml-2">', '</small>') ?>
-							</div> -->
-
 							<div class="row">
 								<div class="col col-4">
 									<div class="form-group">
@@ -99,8 +93,3 @@
 	</div>
 </div>
 <!-- Akhir detail foto testimonial -->
-
-
-<script>
-	CKEDITOR.replace('deskripsi');
-</script>

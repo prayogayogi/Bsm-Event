@@ -113,7 +113,7 @@
 						</li>
 
 						<li class="sidebar-item">
-							<a href="<?= base_url('') ?>" class='sidebar-link'>
+							<a href="<?= base_url('Logout') ?>" onclick="return confirm('Yakin Ingin keluar..?')" class='sidebar-link'>
 								<i data-feather="log-out" width="20"></i>
 								<span>Logout</span>
 							</a>

@@ -3,6 +3,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class UserAppModel extends CI_Model
 {
+	// Get User app
+	public function userLogin()
+	{
+		return $this->db->get_where('tb_userapp', ['email' => $this->session->userdata('email')])->row_array();
+	}
 
 	// Get data tb_userapp
 	public function index()

@@ -37,7 +37,7 @@
 								<td><?= $indexs['nama']; ?></td>
 								<td><?= $indexs['email']; ?></td>
 								<td>
-									<a href="#" data-toggle="modal" data-backdrop="false" data-target="#detailFoto<?= $indexs['slug'] ?>"> <img src="<?= base_url('public/image/userApp/') . $indexs['foto']; ?>" class="img-thumbnail" alt="userapp" width="70px"></a>
+									<a href="#" data-toggle="modal" data-backdrop="false" data-target="#detailFoto<?= $indexs['id'] ?>"> <img src="<?= base_url('public/image/userApp/') . $indexs['foto']; ?>" class="img-thumbnail" alt="userapp" width="70px"></a>
 								</td>
 								<td>
 									<div calass="btn-group">
@@ -141,7 +141,7 @@
 <!-- Modal Detail foto userapp -->
 <?php foreach ($index as $indexs) : ?>
 	<div class="col-md-6 col-12">
-		<div class="modal fade text-left" id="detailFoto<?= $indexs['slug'] ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+		<div class="modal fade text-left" id="detailFoto<?= $indexs['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
 				<div class="modal-content">
 					<div class="modal-header">

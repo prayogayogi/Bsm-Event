@@ -6,17 +6,21 @@ class Cilent extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model(['LayananModel', 'CilentModel']);
+		$this->load->model(['LayananModel', 'CilentModel', 'UserAppModel']);
 		$this->load->library('form_validation');
+		if (!$this->session->userdata('email')) {
+			redirect('Login');
+		};
 	}
 
 	// Untuk view cilent
 	public function index()
 	{
 		$data['title'] = "Cilent";
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$data['index'] = $this->CilentModel->index();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/app/cilent/index', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -28,9 +32,10 @@ class Cilent extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Cilent";
 			$data['index'] = $this->CilentModel->index();
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$data['service'] = $this->LayananModel->index();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/app/cilent/index', $data);
 			$this->load->view('back/includes/footer');
 		} else {
@@ -49,10 +54,11 @@ class Cilent extends CI_Controller
 	public function edit($id)
 	{
 		$data['title'] = "Update Cilent";
+		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$data['index'] = $this->CilentModel->edit($id);
 		$data['service'] = $this->LayananModel->index();
 		$this->load->view('back/includes/sidebar', $data);
-		$this->load->view('back/includes/navbar');
+		$this->load->view('back/includes/navbar', $data);
 		$this->load->view('back/pages/app/cilent/edit', $data);
 		$this->load->view('back/includes/footer');
 	}
@@ -63,10 +69,11 @@ class Cilent extends CI_Controller
 		$this->form_validation->set_rules('namaCilent', 'Nama Cilent', 'trim|required', ['required' => 'Nama Cilent harus di isi']);
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Update Cilent";
+			$data['userLogin'] = $this->UserAppModel->userLogin();
 			$data['index'] = $this->CilentModel->edit($id);
 			$data['service'] = $this->LayananModel->index();
 			$this->load->view('back/includes/sidebar', $data);
-			$this->load->view('back/includes/navbar');
+			$this->load->view('back/includes/navbar', $data);
 			$this->load->view('back/pages/app/cilent/edit', $data);
 			$this->load->view('back/includes/footer');
 		} else {
