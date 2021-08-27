@@ -79,20 +79,20 @@
 
 
 
-						<li class="sidebar-item  has-sub">
+						<li class="sidebar-item <?= (current_url() == base_url('Admin/Profile/company')) || (current_url() == base_url('Admin/Profile/kontak')) ? 'active' : '' ?>  has-sub">
 							<a href="#" class='sidebar-link'>
 								<i data-feather="layers" width="20"></i>
 								<span>Profile</span>
 							</a>
 
-							<ul class="submenu ">
+							<ul class="submenu <?= (current_url() == base_url('Admin/Profile/company')) || (current_url() == base_url('Admin/Profile/kontak')) ? 'active' : '' ?>">
 
 								<li>
-									<a href="ui-chatbox.html">Company Profile</a>
+									<a href="<?= base_url('Admin/Profile/company') ?>">Company Profile</a>
 								</li>
 
 								<li>
-									<a href="ui-pricing.html">Kontak</a>
+									<a href="<?= base_url('Admin/Profile/kontak') ?>">Kontak</a>
 								</li>
 
 							</ul>
