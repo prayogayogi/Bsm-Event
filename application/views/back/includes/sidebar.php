@@ -87,9 +87,9 @@
 
 							<ul class="submenu <?= (current_url() == base_url('Admin/Profile/company')) || (current_url() == base_url('Admin/Profile/kontak')) ? 'active' : '' ?>">
 
-								<li>
+								<!-- <li>
 									<a href="<?= base_url('Admin/Profile/company') ?>">Company Profile</a>
-								</li>
+								</li> -->
 
 								<li>
 									<a href="<?= base_url('Admin/Profile/kontak') ?>">Kontak</a>
@@ -100,23 +100,20 @@
 						</li>
 
 
+						<li class='sidebar-title'>Authentication</li>
 
 
-						<li class="sidebar-item">
-							<a href="#" class='sidebar-link'>
+
+						<li class="sidebar-item <?= (current_url() == base_url('Admin/UserApp')) ? 'active' : '' ?>">
+							<a href="<?= base_url('Admin/UserApp') ?>" class='sidebar-link'>
 								<i data-feather="users" width="20"></i>
 								<span>Admin</span>
 							</a>
 
 						</li>
 
-
-
-
-						<li class='sidebar-title'>Authentication</li>
-
 						<li class="sidebar-item">
-							<a href="#" class='sidebar-link'>
+							<a href="<?= base_url('') ?>" class='sidebar-link'>
 								<i data-feather="log-out" width="20"></i>
 								<span>Logout</span>
 							</a>

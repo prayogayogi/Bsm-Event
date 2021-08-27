@@ -84,7 +84,7 @@
 				<div class="modal-body">
 					<div class="row">
 						<div class="col">
-							<img src="<?= base_url('public/image/testimonial/') . $index['foto']; ?>" class="mt-4 mb-3 ml-3 img-thumbnail" alt="testimonial">
+							<img src="<?= base_url('public/image/testimonial/') . $index['foto']; ?>" class="mt-4 mb-3 ml-3 img-thumbnail" width="300px" alt="testimonial">
 						</div>
 					</div>
 				</div>

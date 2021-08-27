@@ -52,11 +52,11 @@
 								<?= form_error('facebook', '<small class="text-danger ml-2">', '</small>') ?>
 							</div>
 						</div>
-						<div class="modal-footer mt-3">
-							<button type="reset" class="btn btn-secondary" data-dismiss="modal">
+						<div class="modal-footer py-3">
+							<a href="<?= base_url('Admin/Profile/kontak') ?>" class="btn btn-secondary" data-dismiss="modal">
 								<i class="bx bx-x d-block d-sm-none"></i>
 								<span class="d-none d-sm-block">Close</span>
-							</button>
+							</a>
 							<button type="submit" class="btn btn-primary ml-1">
 								<i class="bx bx-check d-block d-sm-none"></i>
 								<span class="d-none d-sm-block">Save</span>
