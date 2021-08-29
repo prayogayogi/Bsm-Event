@@ -7,7 +7,7 @@
 						<div class="title-holder-cell text-left">
 							<h1 class="page-title">Layanan</h1>
 							<ol class="breadcrumb">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="<?= base_url('Home') ?>">Home</a></li>
 								<li class="active">Layanan</li>
 							</ol>
 						</div>
@@ -37,7 +37,9 @@
 						<div class="full">
 							<div class="service_blog_inner">
 								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si1.png" alt="#" /></div>
-								<h4 class="service-heading">LED Videotron Indoor</h4>
+								<a href="<?= base_url('Layanan/videotron') ?>">
+									<h4 class="service-heading">LED Videotron Indoor</h4>
+								</a>
 								<p>Sewa LED Videotron Indoor Mulai dari harga 4jtaan.</p>
 							</div>
 						</div>
@@ -46,7 +48,9 @@
 						<div class="full">
 							<div class="service_blog_inner">
 								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si2.png" alt="#" /></div>
-								<h4 class="service-heading">LED Videotron Outdoor</h4>
+								<a href="<?= base_url('Layanan/videotron') ?>">
+									<h4 class="service-heading">LED Videotron Outdoor</h4>
+								</a>
 								<p>Sewa LED Videotron Outdoor mulai dari harga 500.</p>
 							</div>
 						</div>
@@ -55,7 +59,9 @@
 						<div class="full">
 							<div class="service_blog_inner">
 								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si3.png" alt="#" /></div>
-								<h4 class="service-heading">LED Smart TV</h4>
+								<a href="<?= base_url('Layanan/ledTvTouchscreen') ?>">
+									<h4 class="service-heading">LED TV Touchscreen</h4>
+								</a>
 								<p>Sewa LED / LCD TV murah mulai dari harga 600K.</p>
 							</div>
 						</div>
@@ -64,7 +70,9 @@
 						<div class="full">
 							<div class="service_blog_inner">
 								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si4.png" alt="#" /></div>
-								<h4 class="service-heading">LED Stand Signange</h4>
+								<a href="<?= base_url('Layanan/ledDisplay') ?>">
+									<h4 class="service-heading">LED Display Stand Touchscreen</h4>
+								</a>
 								<p>Sewa LED Stand Smart TV Touch screen mulai dari Rp. 1,4Jt.</p>
 							</div>
 						</div>
@@ -73,12 +81,14 @@
 						<div class="full">
 							<div class="service_blog_inner">
 								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si5.png" alt="#" /></div>
-								<h4 class="service-heading">Projector & Screen</h4>
+								<a href="<?= base_url('Layanan/projektor') ?>">
+									<h4 class="service-heading">Projector & Screen</h4>
+								</a>
 								<p>Sewa Projector dan Screen mulai dari harga Rp. 800K.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<!-- <div class="col-md-4">
 						<div class="full">
 							<div class="service_blog_inner">
 								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si6.png" alt="#" /></div>
@@ -86,7 +96,7 @@
 								<p>Anda butuh sewa alat multimedia lainnya seperti laptop dan komputer?.</p>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -98,31 +108,31 @@
 		<div class="row">
 			<div class="col-md-4 service_blog">
 				<div class="full">
-					<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/post-01.jpg" alt="#" /> </div>
+					<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/videotron2.png" alt="#" /> </div>
 					<div class="service_cont">
 						<h3 class="service_head">Data recovery</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 service_blog">
 				<div class="full">
-					<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/post-02.jpg" alt="#" /> </div>
+					<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/videotron3.jpg" alt="#" /> </div>
 					<div class="service_cont">
 						<h3 class="service_head">Computer repair</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 service_blog">
 				<div class="full">
-					<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/post-03.jpg" alt="#" /> </div>
+					<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/videotron6.jpg" alt="#" /> </div>
 					<div class="service_cont">
 						<h3 class="service_head">Network solutions</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>
@@ -130,7 +140,7 @@
 	</div>
 </div>
 <!-- end section -->
-<div class="section padding_layout_1">
+<!-- <div class="section padding_layout_1">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -221,4 +231,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->

@@ -13,7 +13,7 @@
 
 	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
 	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/css/app.css">
-	<link rel="shortcut icon" href="<?= base_url('public/assetAdmin/') ?>assets/images/favicon.svg" type="image/x-icon">
+	<link rel="shortcut icon" href="<?= base_url('public/assetAdmin/') ?>assets/images/fevicon.png" type="image/x-icon">
 	<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 </head>
 

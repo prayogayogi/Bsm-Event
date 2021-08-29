@@ -6,10 +6,11 @@
 				<div class="full">
 					<div class="title-holder">
 						<div class="title-holder-cell text-left">
-							<h1 class="page-title">Galery</h1>
+							<h1 class="page-title">Layanan</h1>
 							<ol class="breadcrumb">
 								<li><a href="<?= base_url('Home') ?>">Home</a></li>
-								<li class="active">Galery</li>
+								<li class="active">Layanan</li>
+								<li class="active">Videotron</li>
 							</ol>
 						</div>
 					</div>
@@ -29,7 +30,7 @@
 					<div class="service_cont">
 						<h3 class="service_head">Data recovery</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>
@@ -39,7 +40,7 @@
 					<div class="service_cont">
 						<h3 class="service_head">Computer repair</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>
@@ -49,7 +50,7 @@
 					<div class="service_cont">
 						<h3 class="service_head">Network solutions</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>
@@ -59,7 +60,7 @@
 					<div class="service_cont">
 						<h3 class="service_head">Data recovery</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>
@@ -69,7 +70,7 @@
 					<div class="service_cont">
 						<h3 class="service_head">Computer repair</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>
@@ -79,7 +80,7 @@
 					<div class="service_cont">
 						<h3 class="service_head">Network solutions</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>
@@ -89,7 +90,7 @@
 					<div class="service_cont">
 						<h3 class="service_head">Data recovery</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>
@@ -99,7 +100,7 @@
 					<div class="service_cont">
 						<h3 class="service_head">Computer repair</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>
@@ -109,7 +110,7 @@
 					<div class="service_cont">
 						<h3 class="service_head">Network solutions</h3>
 						<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-						<div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+						<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details') ?>">View Service</a> </div>
 					</div>
 				</div>
 			</div>

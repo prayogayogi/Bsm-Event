@@ -6,10 +6,11 @@
 				<div class="full">
 					<div class="title-holder">
 						<div class="title-holder-cell text-left">
-							<h1 class="page-title">Galery</h1>
+							<h1 class="page-title">Layanan</h1>
 							<ol class="breadcrumb">
 								<li><a href="<?= base_url('Home') ?>">Home</a></li>
-								<li class="active">Galery</li>
+								<li class="active">Layanan</li>
+								<li class="active">Led Tv Touchscreen</li>
 							</ol>
 						</div>
 					</div>

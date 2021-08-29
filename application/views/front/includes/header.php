@@ -27,6 +27,10 @@
 	<link rel="stylesheet" href="<?= base_url('public/assetFrontEnd/') ?>css/custom.css" />
 	<!-- wow Animation css -->
 	<link rel="stylesheet" href="<?= base_url('public/assetFrontEnd/') ?>css/animate.css" />
+
+	<!-- zoom effect -->
+	<link rel='stylesheet' href='<?= base_url('public/assetFrontEnd/') ?>css/hizoom.css'>
+	<!-- end zoom effect -->
 	<!-- revolution slider css -->
 	<link rel="stylesheet" type="text/css" href="<?= base_url('public/assetFrontEnd/') ?>revolution/css/settings.css" />
 	<link rel="stylesheet" type="text/css" href="<?= base_url('public/assetFrontEnd/') ?>revolution/css/layers.css" />
@@ -51,8 +55,8 @@
 						<div class="full">
 							<div class="topbar-left">
 								<ul class="list-inline">
-									<li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">540 Lorem Ipsum New York, AB 90218</span> </li>
-									<li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></span> </li>
+									<li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">Villa mas indah blok C9 no,8 RT.002/RW.8, Kota Bks, Jawa Barat 17123a</span> </li>
+									<li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:jasaweb@gmail.com">jasaweb@gmail.com</a></span> </li>
 								</ul>
 							</div>
 						</div>
@@ -95,10 +99,10 @@
 									</li>
 									<li> <a href="<?= base_url('Layanan') ?>">Layanan</a>
 										<ul>
-											<li><a href="it_service_list.html">Videotron</a></li>
-											<li><a href="it_service_detail.html">LED TV Touchscreen</a></li>
-											<li><a href="it_service_detail.html">LED Display Stand Touchscreen</a></li>
-											<li><a href="it_service_detail.html">Projector</a></li>
+											<li><a href="<?= base_url('Layanan/videotron') ?>">Videotron</a></li>
+											<li><a href="<?= base_url('Layanan/ledTvTouchscreen') ?>">LED TV Touchscreen</a></li>
+											<li><a href="<?= base_url('Layanan/ledDisplay') ?>">LED Display Stand Touchscreen</a></li>
+											<li><a href="<?= base_url('Layanan/projektor') ?>">Projector</a></li>
 										</ul>
 									</li>
 									<li> <a href="<?= base_url('Galery') ?>">Galery</a>
@@ -106,7 +110,7 @@
 									<li> <a href="it_contact.html">Tentang Kami</a>
 										<ul>
 											<li><a href="<?= base_url('Contact') ?>">Kontak Kami</a></li>
-											<li><a href="it_contact.html">Profil Kami</a></li>
+											<!-- <li><a href="it_contact.html">Profil Kami</a></li> -->
 											<li><a href="<?= base_url('Faq') ?>">Faq</a></li>
 										</ul>
 									</li>

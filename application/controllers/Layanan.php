@@ -16,4 +16,40 @@ class Layanan extends CI_Controller
 		$this->load->view('front/pages/layanan');
 		$this->load->view('front/includes/footer');
 	}
+
+	// Untuk videotron
+	public function videotron()
+	{
+		$data['title'] = "BSM Compro 2020 | Layanan Videotron";
+		$this->load->view('front/includes/header', $data);
+		$this->load->view('front/pages/videotron');
+		$this->load->view('front/includes/footer');
+	}
+
+	// Untuk videotron
+	public function ledTvTouchscreen()
+	{
+		$data['title'] = "BSM Compro 2020 | Layanan Led Tv Touchscreen";
+		$this->load->view('front/includes/header', $data);
+		$this->load->view('front/pages/ledTvTouchscreen');
+		$this->load->view('front/includes/footer');
+	}
+
+	// Untuk videotron
+	public function ledDisplay()
+	{
+		$data['title'] = "BSM Compro 2020 | Layanan Led Display";
+		$this->load->view('front/includes/header', $data);
+		$this->load->view('front/pages/ledDisplay');
+		$this->load->view('front/includes/footer');
+	}
+
+	// Untuk videotron
+	public function projektor()
+	{
+		$data['title'] = "BSM Compro 2020 | Layanan Led Display";
+		$this->load->view('front/includes/header', $data);
+		$this->load->view('front/pages/projektor');
+		$this->load->view('front/includes/footer');
+	}
 }

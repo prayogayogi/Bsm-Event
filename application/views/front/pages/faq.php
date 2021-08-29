@@ -8,7 +8,7 @@
 						<div class="title-holder-cell text-left">
 							<h1 class="page-title">Faq</h1>
 							<ol class="breadcrumb">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="<?= base_url('Home') ?>">Home</a></li>
 								<li>Tentang Kami</li>
 								<li class="active">Faq</li>
 							</ol>
@@ -151,10 +151,10 @@
 						<h4>LAYANAN KAMI</h4>
 						<div class="categary">
 							<ul>
-								<li><a href="it_data_recovery.html"><i class="fa fa-angle-right"></i> Videotron Indoor</a></li>
-								<li><a href="it_computer_repair.html"><i class="fa fa-angle-right"></i> LED TV Touchscreen</a></li>
-								<li><a href="it_mobile_service.html"><i class="fa fa-angle-right"></i> LED Display Stand Touchscreen</a></li>
-								<li><a href="it_mobile_service.html"><i class="fa fa-angle-right"></i> Projector</a></li>
+								<li><a href="<?= base_url('Layanan/videotron') ?>"><i class="fa fa-angle-right"></i> Videotron Indoor</a></li>
+								<li><a href="<?= base_url('Layanan/ledTvTouchscreen') ?>"><i class="fa fa-angle-right"></i> LED TV Touchscreen</a></li>
+								<li><a href="<?= base_url('Layanan/ledDisplay') ?>"><i class="fa fa-angle-right"></i> LED Display Stand Touchscreen</a></li>
+								<li><a href="<?= base_url('Layanan/projektor') ?>"><i class="fa fa-angle-right"></i> Projector</a></li>
 							</ul>
 						</div>
 					</div>

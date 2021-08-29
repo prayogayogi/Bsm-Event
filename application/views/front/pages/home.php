@@ -6,9 +6,9 @@
 				<!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
 				<div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
 					<ul>
-						<li data-index="rs-1812" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="<?= base_url('public/assetFrontEnd/') ?>images/it_service/slide1.jpg" data-rotate="0" data-saveperformance="off" data-title="Computer Services" data-description="">
+						<li data-index="rs-1812" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="<?= base_url('public/assetFrontEnd/') ?>images/it_service/1test_bg.png" data-rotate="0" data-saveperformance="off" data-title="Computer Services" data-description="">
 							<!-- MAIN IMAGE -->
-							<img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/slide1.jpg" alt="#" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+							<img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/1test_bg.png" alt="#" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 							<!-- LAYERS -->
 							<!-- LAYER NR. BG -->
 							<div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" id="slide-270-layer-1012" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="s:300;s:300;" data-start="750" data-basealign="slide" data-responsive_offset="on" data-responsive="off" style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
@@ -19,9 +19,9 @@
 							<!-- LAYER NR. 3 -->
 							<div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" id="slide-18-layer-412" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','51','51','31']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">Tersedia Di BSM </div>
 						</li>
-						<li data-index="rs-181" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="<?= base_url('public/assetFrontEnd/') ?>images/it_service/slide2.jpg" data-rotate="0" data-saveperformance="off" data-title="Easy To Use & Customize" data-description="">
+						<li data-index="rs-181" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="<?= base_url('public/assetFrontEnd/') ?>images/it_service/slide02.jpg" data-rotate="0" data-saveperformance="off" data-title="Easy To Use & Customize" data-description="">
 							<!-- MAIN IMAGE -->
-							<img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/slide2.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+							<img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/slide02.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 							<!-- LAYERS -->
 							<!-- LAYER NR. BG -->
 							<div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" id="slide-270-layer-101" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="s:300;s:300;" data-start="750" data-basealign="slide" data-responsive_offset="on" data-responsive="off" style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
@@ -32,9 +32,9 @@
 							<!-- LAYER NR. 3 -->
 							<div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" id="slide-18-layer-41" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','51','51','31']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">Tersedia Di BSM </div>
 						</li>
-						<li data-index="rs-18" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="<?= base_url('public/assetFrontEnd/') ?>images/it_service/slide3.jpg" data-rotate="0" data-saveperformance="off" data-title="Perfectly Responsive" data-description="">
+						<li data-index="rs-18" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="<?= base_url('public/assetFrontEnd/') ?>images/it_service/slide01.jpg" data-rotate="0" data-saveperformance="off" data-title="Perfectly Responsive" data-description="">
 							<!-- MAIN IMAGE -->
-							<img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/slide3.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+							<img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/slide01.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 							<!-- LAYERS -->
 							<!-- LAYER NR. BG -->
 							<div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" id="slide-270-layer-10" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="s:300;s:300;" data-start="750" data-basealign="slide" data-responsive_offset="on" data-responsive="off" style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
@@ -71,11 +71,12 @@
 				<div class="full text_align_left">
 					<h3>Kami adalah</h3>
 					<p class="text-justify">Pusat jasa penyewaan LED Videotron di Jakarta dengan harga terbaik, kami menyediakan LED Videotron dengan berbagai ukuran dan untuk kebutuhan indoor maupun outdoor, tidak hanya itu kami juga menyediakan sewa LED Smat TV Tourcscreen, LED Stand, Projector dan Screen dan berbagai kebutuhan multi media lainnya..</p>
-					<!-- <ul>
-						<li><i class="fa fa-check-circle"></i>Persius appetere pro mea harum ridens</li>
-						<li><i class="fa fa-check-circle"></i>Instructior vis at causae legimus luptatum mel</li>
-						<li><i class="fa fa-check-circle"></i>Maluisset id persius appetere pro mea harum</li>
-					</ul> -->
+					<ul>
+						<li><i class="fa fa-check-circle"></i>Videotron</li>
+						<li><i class="fa fa-check-circle"></i>LED TV Touchscreen</li>
+						<li><i class="fa fa-check-circle"></i>LED Display Stand</li>
+						<li><i class="fa fa-check-circle"></i>Projector</li>
+					</ul>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
@@ -159,7 +160,9 @@
 							<div class="full">
 								<div class="service_blog_inner">
 									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si1.png" alt="#" /></div>
-									<h4 class="service-heading">LED Videotron Indoor</h4>
+									<a href="<?= base_url('Layanan/videotron') ?>">
+										<h4 class="service-heading">LED Videotron Indoor</h4>
+									</a>
 									<p>Sewa LED Videotron Indoor Mulai dari harga 4jtaan.</p>
 								</div>
 							</div>
@@ -168,7 +171,9 @@
 							<div class="full">
 								<div class="service_blog_inner">
 									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si2.png" alt="#" /></div>
-									<h4 class="service-heading">LED Videotron Outdoor</h4>
+									<a href="<?= base_url('Layanan/videotron') ?>">
+										<h4 class="service-heading">LED Videotron Outdoor</h4>
+									</a>
 									<p>Sewa LED Videotron Outdoor mulai dari harga 500.</p>
 								</div>
 							</div>
@@ -177,7 +182,9 @@
 							<div class="full">
 								<div class="service_blog_inner">
 									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si3.png" alt="#" /></div>
-									<h4 class="service-heading">LED Smart TV</h4>
+									<a href="<?= base_url('Layanan/ledTvTouchscreen') ?>">
+										<h4 class="service-heading">LED TV Touchscreen</h4>
+									</a>
 									<p>Sewa LED / LCD TV murah mulai dari harga 600K.</p>
 								</div>
 							</div>
@@ -186,7 +193,9 @@
 							<div class="full">
 								<div class="service_blog_inner">
 									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si4.png" alt="#" /></div>
-									<h4 class="service-heading">LED Stand Signange</h4>
+									<a href="<?= base_url('Layanan/ledDisplay') ?>">
+										<h4 class="service-heading">LED Display Stand Touchscreen</h4>
+									</a>
 									<p>Sewa LED Stand Smart TV Touch screen mulai dari Rp. 1,4Jt.</p>
 								</div>
 							</div>
@@ -195,20 +204,22 @@
 							<div class="full">
 								<div class="service_blog_inner">
 									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si5.png" alt="#" /></div>
-									<h4 class="service-heading">Projector & Screen</h4>
+									<a href="<?= base_url('Layanan/projektor') ?>">
+										<h4 class="service-heading">Projector & Screen</h4>
+									</a>
 									<p>Sewa Projector dan Screen mulai dari harga Rp. 800K.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="full">
-								<div class="service_blog_inner">
-									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si6.png" alt="#" /></div>
-									<h4 class="service-heading">Multimedia Lainnya</h4>
-									<p>Anda butuh sewa alat multimedia lainnya seperti laptop dan komputer?.</p>
-								</div>
+						<!-- <div class="col-md-4">
+						<div class="full">
+							<div class="service_blog_inner">
+								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si6.png" alt="#" /></div>
+								<h4 class="service-heading">Multimedia Lainnya</h4>
+								<p>Anda butuh sewa alat multimedia lainnya seperti laptop dan komputer?.</p>
 							</div>
 						</div>
+					</div> -->
 					</div>
 				</div>
 			</div>
@@ -324,10 +335,10 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
 					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/1.jpg" alt=""> </div>
+						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/videotron1.png" alt=""> </div>
 						<div class="product_detail_btm">
 							<div class="center">
-								<h4><a href="it_shop_detail.html">Norton Internet Security</a></h4>
+								<h4><a href="<?= base_url('Details') ?>">Norton Internet Security</a></h4>
 							</div>
 							<div class="starratin">
 								<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
@@ -340,7 +351,7 @@
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
 					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/2.jpg" alt=""> </div>
+						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/videotron2.png" alt=""> </div>
 						<div class="product_detail_btm">
 							<div class="center">
 								<h4><a href="it_shop_detail.html">Kaspersky Internet Security</a></h4>
@@ -356,7 +367,7 @@
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
 					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/3.jpg" alt=""> </div>
+						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/videotron3.jpg" alt=""> </div>
 						<div class="product_detail_btm">
 							<div class="center">
 								<h4><a href="it_shop_detail.html">Mcafee Livesafe Antivirus</a></h4>
@@ -372,71 +383,7 @@
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
 					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/4.jpg" alt=""> </div>
-						<div class="product_detail_btm">
-							<div class="center">
-								<h4><a href="it_shop_detail.html">Norton Internet Security</a></h4>
-							</div>
-							<div class="starratin">
-								<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-							</div>
-							<div class="product_price">
-								<p><span class="old_price">$15.00</span> – <span class="new_price">$25.00</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/5.jpg" alt=""> </div>
-						<div class="product_detail_btm">
-							<div class="center">
-								<h4><a href="it_shop_detail.html">Norton Internet Security</a></h4>
-							</div>
-							<div class="starratin">
-								<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-							</div>
-							<div class="product_price">
-								<p><span class="old_price">$15.00</span> – <span class="new_price">$25.00</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/6.jpg" alt=""> </div>
-						<div class="product_detail_btm">
-							<div class="center">
-								<h4><a href="it_shop_detail.html">Kaspersky Internet Security</a></h4>
-							</div>
-							<div class="starratin">
-								<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-							</div>
-							<div class="product_price">
-								<p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/7.jpg" alt=""> </div>
-						<div class="product_detail_btm">
-							<div class="center">
-								<h4><a href="it_shop_detail.html">Mcafee Livesafe Antivirus</a></h4>
-							</div>
-							<div class="starratin">
-								<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-							</div>
-							<div class="product_price">
-								<p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/8.jpg" alt=""> </div>
+						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/videotron4.jpg" alt=""> </div>
 						<div class="product_detail_btm">
 							<div class="center">
 								<h4><a href="it_shop_detail.html">Norton Internet Security</a></h4>

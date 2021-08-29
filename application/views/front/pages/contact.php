@@ -7,7 +7,7 @@
 						<div class="title-holder-cell text-left">
 							<h1 class="page-title">Kontak</h1>
 							<ol class="breadcrumb">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="<?= base_url('Home') ?>">Home</a></li>
 								<li class="active">Kontak</li>
 							</ol>
 						</div>

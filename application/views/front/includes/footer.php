@@ -79,7 +79,7 @@
 							<h2>MINTA PENAWARAN GRATIS</h2>
 							<p>Dapatkan jawaban dan saran dari orang yang Anda inginkan.</p>
 						</div>
-						<div class="button_Section_cont"> <a class="btn dark_gray_bt" href="it_contact.html">Contact us</a> </div>
+						<div class="button_Section_cont"> <a class="btn dark_gray_bt" href="<?= base_url('Contact') ?>">Kontak kami</a> </div>
 					</div>
 				</div>
 			</div>
@@ -138,12 +138,12 @@
 <footer class="footer_style_2">
 	<div class="container-fuild">
 		<div class="row">
-			<div class="map_section">
+			<!-- <div class="map_section">
 				<div id="map"></div>
-			</div>
+			</div> -->
 			<div class="footer_blog">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<div class="main-heading left_text">
 							<h2>BSM Compro 2020</h2>
 						</div>
@@ -155,7 +155,7 @@
 						</ul>
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<div class="main-heading left_text">
 							<h2>Layanan</h2>
 						</div>
@@ -166,7 +166,7 @@
 							<li><a href="it_mobile_service.html"><i class="fa fa-angle-right"></i> Projector</a></li>
 						</ul>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<div class="main-heading left_text">
 							<h2>HUBUNGI KAMI</h2>
 						</div>
@@ -187,7 +187,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="cprt">
+			<div class="cprt d-flex justify-content-cente">
 				<p>BSM Compro 2020 © Copyrights 2019 Design by yprdev.com</p>
 			</div>
 		</div>
@@ -365,6 +365,18 @@
 <!-- google map js -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
 <!-- end google map js -->
+<!-- zoom effect -->
+<script src='<?= base_url('public/assetFrontEnd/') ?>js/hizoom.js'></script>
+<script>
+	$('.hi1').hiZoom({
+		width: 300,
+		position: 'right'
+	});
+	$('.hi2').hiZoom({
+		width: 400,
+		position: 'right'
+	});
+</script>
 </body>
 
 </html>
