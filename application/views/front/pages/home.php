@@ -72,10 +72,9 @@
 					<h3>Kami adalah</h3>
 					<p class="text-justify">Pusat jasa penyewaan LED Videotron di Jakarta dengan harga terbaik, kami menyediakan LED Videotron dengan berbagai ukuran dan untuk kebutuhan indoor maupun outdoor, tidak hanya itu kami juga menyediakan sewa LED Smat TV Tourcscreen, LED Stand, Projector dan Screen dan berbagai kebutuhan multi media lainnya..</p>
 					<ul>
-						<li><i class="fa fa-check-circle"></i>Videotron</li>
-						<li><i class="fa fa-check-circle"></i>LED TV Touchscreen</li>
-						<li><i class="fa fa-check-circle"></i>LED Display Stand</li>
-						<li><i class="fa fa-check-circle"></i>Projector</li>
+						<?php foreach ($index as $indexs) : ?>
+							<li><i class="fa fa-check-circle"></i><?= $indexs['jenis']; ?></li>
+						<?php endforeach; ?>
 					</ul>
 				</div>
 			</div>

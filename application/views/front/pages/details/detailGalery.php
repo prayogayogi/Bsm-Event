@@ -32,7 +32,7 @@
 					</div>
 					<div class="col-xl-6 col-lg-12 col-md-12 product_detail_side detail_style1">
 						<div class="product-heading">
-							<h2><?= $getDetail['jenis']; ?></h2>
+							<h2><?= $getDetail['jenis_id']; ?></h2>
 						</div>
 						<div class="product-detail-side"><span class="new-price">Rp <?= rupiah($getDetail['price']); ?></span> <span class="rating"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </span> <span class="review">(5 customer review)</span> </div>
 						<div class="detail-contant">
@@ -57,7 +57,7 @@
 							<div class="tab_bar_section">
 								<ul class="nav nav-tabs" role="tablist">
 									<li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#description">Description</a> </li>
-									<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#reviews">Reviews (2)</a> </li>
+									<!-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#reviews">Reviews (2)</a> </li> -->
 								</ul>
 								<!-- Tab panes -->
 								<div class="tab-content">
@@ -67,7 +67,7 @@
 											</p>
 										</div>
 									</div>
-									<div id="reviews" class="tab-pane fade">
+									<!-- <div id="reviews" class="tab-pane fade">
 										<div class="product_review">
 											<h3>Reviews (2)</h3>
 											<div class="commant-text row">
@@ -112,7 +112,7 @@
 												</div>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -139,9 +139,7 @@
 									<div class="starratin">
 										<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
 									</div>
-									<div class="product_price">
-										<p><span class="new_price">Rp <?= rupiah($getDetail['price']); ?></span></p>
-									</div>
+
 								</div>
 							</div>
 						</div>

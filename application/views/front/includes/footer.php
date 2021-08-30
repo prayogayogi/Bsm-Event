@@ -1,6 +1,6 @@
 <!-- section -->
 <div class="section padding_layout_1 testmonial_section white_fonts">
-	<div class="container">
+	<div class="container" style="display: none;">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="full">
@@ -218,9 +218,9 @@
 <script src="<?= base_url('public/assetFrontEnd/') ?>revolution/js/extensions/revolution.extension.navigation.min.js"></script>
 <script src="<?= base_url('public/assetFrontEnd/') ?>revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="<?= base_url('public/assetFrontEnd/') ?>revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<!-- <script src="<?= base_url('public/assetFrontEnd/') ?>revolution/js/extensions/revolution.extension.video.min.js"></script> -->
+<script src="<?= base_url('public/assetFrontEnd/') ?>revolution/js/extensions/revolution.extension.video.min.js"></script>
 <!-- map js -->
-<script>
+<!-- <script>
 	// This example adds a marker to indicate the position of Bondi Beach in Sydney,
 	// Australia.
 	function initMap() {
@@ -365,9 +365,9 @@
 			icon: image
 		});
 	}
-</script>
+</script> -->
 <!-- google map js -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script> -->
 <!-- end google map js -->
 <!-- zoom effect -->
 <script src='<?= base_url('public/assetFrontEnd/') ?>js/hizoom.js'></script>

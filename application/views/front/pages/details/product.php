@@ -140,7 +140,7 @@
 										<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
 									</div>
 									<div class="product_price">
-										<p><span class="new_price">Rp <?= rupiah($getDetail['price']); ?></span></p>
+										<!-- <p><span class="new_price">Rp <?= rupiah($getDetail['price']); ?></span></p> -->
 									</div>
 								</div>
 							</div>

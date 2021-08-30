@@ -98,9 +98,9 @@ class GaleryModel extends CI_Model
 	public function ggetDetail($foto)
 	{
 		$this->db->select('*');
-		$this->db->from('tb_galery');
-		$this->db->join('tb_layanan', 'tb_layanan.slug = tb_galery.slug');
-		$this->db->where('tb_galery.foto', $foto);
+		$this->db->from('tb_layanan');
+		$this->db->join('tb_galery', 'tb_galery.slug = tb_layanan.slug');
+		$this->db->where('tb_layanan.foto', $foto);
 		return $this->db->get();
 	}
 }

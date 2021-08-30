@@ -92,9 +92,9 @@
 						<div class="menu_side">
 							<div id="navbar_menu">
 								<ul class="first-ul">
-									<li> <a class=" <?= (in_array(current_url(), [base_url('Home'), base_url('/')])) ? 'active' : '' ?>" href="<?= base_url('Home') ?>">Home</a>
+									<li> <a class=" <?= (current_url() == base_url('Home')) ? 'active' : '' ?>" href="<?= base_url('Home') ?>">Home</a>
 									</li>
-									<li> <a class=" <?= (in_array(current_url(), [base_url('Layanan'), base_url('/')])) ? 'active' : '' ?>" href="<?= base_url('Layanan') ?>">Layanan</a>
+									<li> <a class=" <?= (current_url() == base_url('Layanan')) || (current_url() == base_url('Layanan/videotron')) || (current_url() == base_url('Layanan/ledTvTouchscreen')) || (current_url() == base_url('Layanan/ledDisplay')) || (current_url() == base_url('Layanan/projektor')) ? 'active' : '' ?>" href="<?= base_url('Layanan') ?>">Layanan</a>
 										<ul>
 											<li><a href="<?= base_url('Layanan/videotron') ?>">Videotron</a></li>
 											<li><a href="<?= base_url('Layanan/ledTvTouchscreen') ?>">LED TV Touchscreen</a></li>
@@ -102,9 +102,9 @@
 											<li><a href="<?= base_url('Layanan/projektor') ?>">Projector</a></li>
 										</ul>
 									</li>
-									<li> <a class=" <?= (in_array(current_url(), [base_url('Galery'), base_url('/')])) ? 'active' : '' ?>" href="<?= base_url('Galery') ?>">Galery</a>
+									<li> <a class=" <?= (current_url() == base_url('Galery')) ? 'active' : '' ?>" href="<?= base_url('Galery') ?>">Galery</a>
 									</li>
-									<li> <a class=" <?= (in_array(current_url(), [base_url('Contact'), base_url('/')])) || (in_array(current_url(), [base_url('Faq'), base_url('/')])) ? 'active' : '' ?>" href="#">Tentang Kami</a>
+									<li> <a class=" <?= (current_url() == base_url('Contact')) ||  (current_url() == base_url('Faq')) ? 'active' : '' ?>" href="#">Tentang Kami</a>
 										<ul>
 											<li><a href="<?= base_url('Contact') ?>">Kontak Kami</a></li>
 											<li><a href="<?= base_url('Faq') ?>">Faq</a></li>
