@@ -226,7 +226,8 @@
 		</div>
 	</div>
 	<!-- end section -->
-	<div class="section padding_layout_1 service_list">
+
+	<div class="section padding_layout_1 service_list" style="display: none;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -319,6 +320,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- section -->
 	<div class="section padding_layout_1">
 		<div class="container">
@@ -333,70 +335,24 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/videotron1.png" alt=""> </div>
-						<div class="product_detail_btm">
-							<div class="center">
-								<h4><a href="<?= base_url('Details') ?>">Norton Internet Security</a></h4>
-							</div>
-							<div class="starratin">
-								<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-							</div>
-							<div class="product_price">
-								<p><span class="old_price">$15.00</span> – <span class="new_price">$25.00</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/videotron2.png" alt=""> </div>
-						<div class="product_detail_btm">
-							<div class="center">
-								<h4><a href="it_shop_detail.html">Kaspersky Internet Security</a></h4>
-							</div>
-							<div class="starratin">
-								<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-							</div>
-							<div class="product_price">
-								<p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p>
+				<?php foreach ($index as $indexs) : ?>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+						<div class="product_list">
+							<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/image/layanan/') . $indexs['foto'] ?>" alt=""> </div>
+							<div class="product_detail_btm">
+								<div class="center">
+									<h4><a href="<?= base_url('Details/index/') . $indexs['slug']  ?>"><?= $indexs['jenis'] ?></a></h4>
+								</div>
+								<div class="starratin">
+									<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
+								</div>
+								<div class="product_price">
+									<p>Rp <span class="new_price"><?= rupiah($indexs['price']); ?></span></p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/videotron3.jpg" alt=""> </div>
-						<div class="product_detail_btm">
-							<div class="center">
-								<h4><a href="it_shop_detail.html">Mcafee Livesafe Antivirus</a></h4>
-							</div>
-							<div class="starratin">
-								<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-							</div>
-							<div class="product_price">
-								<p><span class="old_price">$24.99</span><span class="new_price"> $12.49</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-					<div class="product_list">
-						<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/videotron4.jpg" alt=""> </div>
-						<div class="product_detail_btm">
-							<div class="center">
-								<h4><a href="it_shop_detail.html">Norton Internet Security</a></h4>
-							</div>
-							<div class="starratin">
-								<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-							</div>
-							<div class="product_price">
-								<p><span class="old_price">$15.00</span> – <span class="new_price">$25.00</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>

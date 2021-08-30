@@ -94,4 +94,50 @@ class LayananModel extends CI_Model
 		$this->db->where('slug', $slug);
 		$this->db->delete('tb_layanan');
 	}
+
+
+	// Get Detail layanan
+	public function getDetail($slug)
+	{
+		$this->db->where('slug', $slug);
+		return $this->db->get('tb_layanan');
+	}
+
+	//get data join
+	public function getJoin($slug)
+	{
+		$this->db->select('*');
+		$this->db->from('tb_layanan');
+		$this->db->join('tb_galery', 'tb_galery.slug = tb_layanan.slug');
+		$this->db->where('tb_layanan.slug', $slug);
+		return $this->db->get();
+	}
+
+	//get data Videotron
+	public function getVideotron()
+	{
+		$this->db->where('slug', 'videotron-indoor-atau-outdoor');
+		return $this->db->get('tb_galery');
+	}
+
+	// get data getLedTouc
+	public function getLedTouc()
+	{
+		$this->db->where('slug', 'led-tv-touchscreen');
+		return $this->db->get('tb_galery');
+	}
+
+	// get data getLedTouc
+	public function getLedDisplay()
+	{
+		$this->db->where('slug', 'led-display-stand-touchscreen');
+		return $this->db->get('tb_galery');
+	}
+
+	// get data getLedTouc
+	public function projektor()
+	{
+		$this->db->where('slug', 'projector');
+		return $this->db->get('tb_galery');
+	}
 }
