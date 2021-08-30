@@ -6,7 +6,7 @@ class Home extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model(['LayananModel']);
+		$this->load->model(['LayananModel', 'CilentModel', 'CompanyModel']);
 	}
 
 	// Untuk view Login
@@ -14,18 +14,20 @@ class Home extends CI_Controller
 	{
 		$data['title'] = "BSM Compro 2020";
 		$data['index'] = $this->LayananModel->index();
-		// $data['layanan'] = $this->LayananModel->getLayanan();
+		$data['getCilent'] = $this->CilentModel->index();
+		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
 		$this->load->view('front/includes/header', $data);
 		$this->load->view('front/pages/home', $data);
-		$this->load->view('front/includes/footer');
+		$this->load->view('front/includes/footer', $data);
 	}
 
 	// Untuk layanan
 	public function layanan()
 	{
 		$data['title'] = "BSM Compro 2020 | Layanan";
+		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
 		$this->load->view('front/includes/header', $data);
 		$this->load->view('front/pages/layanan');
-		$this->load->view('front/includes/footer');
+		$this->load->view('front/includes/footer', $data);
 	}
 }

@@ -19,6 +19,7 @@
 	</div>
 </div>
 <!-- end inner page banner -->
+
 <!-- section -->
 <div class="section padding_layout_1 service_list">
 	<div class="container">
@@ -28,9 +29,8 @@
 					<div class="full">
 						<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/image/galery/') . $indexs['foto'] ?>" alt="#" /> </div>
 						<div class="service_cont">
-							<!-- <h3 class="service_head"><?= $indexs['jenis_id'] ?></h3> -->
-							<!-- <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p> -->
-							<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details/index/') . $indexs['slug']  ?>">View Product</a> </div>
+							<!-- <h3 class="service_head"><?= $indexs['jenis_id'] ?></h3>
+							<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details/index/') . $indexs['slug']  ?>">View Product</a> </div> -->
 						</div>
 					</div>
 				</div>

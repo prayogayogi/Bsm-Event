@@ -212,14 +212,14 @@
 							</div>
 						</div>
 						<!-- <div class="col-md-4">
-						<div class="full">
-							<div class="service_blog_inner">
-								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si6.png" alt="#" /></div>
-								<h4 class="service-heading">Multimedia Lainnya</h4>
-								<p>Anda butuh sewa alat multimedia lainnya seperti laptop dan komputer?.</p>
+							<div class="full">
+								<div class="service_blog_inner">
+									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si6.png" alt="#" /></div>
+									<h4 class="service-heading">Multimedia Lainnya</h4>
+									<p>Anda butuh sewa alat multimedia lainnya seperti laptop dan komputer?.</p>
+								</div>
 							</div>
-						</div>
-					</div> -->
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -364,8 +364,8 @@
 				<div class="col-md-12">
 					<div class="full">
 						<div class="main_heading text_align_right">
-							<h2>Komentar Kami</h2>
-							<p class="large">Cara mudah dan efektif untuk memenuhi kebutuhan event Anda.</p>
+							<h2>Penjualan kami</h2>
+							<p class="large">Berikut jumlah total penjualan kami dan pastikan anda termasuk di dalam nya.</p>
 						</div>
 					</div>
 				</div>
@@ -375,23 +375,23 @@
 				<div class="col-md-8">
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin_bottom_50">
-							<div class="text_align_right"><i class="fa fa-smile-o"></i></div>
+							<div class="text_align_right"><i class="fa fa-desktop"></i></i></div>
 							<div class="text_align_right">
-								<p class="counter-heading text_align_right">Pelanggan yang Bahagia</p>
+								<p class="counter-heading text_align_right">Videotron</p>
 							</div>
 							<h5 class="counter-count">2150</h5>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin_bottom_50">
 							<div class="text_align_right"><i class="fa fa-laptop"></i></div>
 							<div class="text_align_right">
-								<p class="counter-heading text_align_right">Videotron </p>
+								<p class="counter-heading text_align_right">LED TV Touchscreen </p>
 							</div>
 							<h5 class="counter-count">1280</h5>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin_bottom_50">
-							<div class="text_align_right"><i class="fa fa-desktop"></i></div>
+							<div class="text_align_right"><i class="fa fa-tv"></i></div>
 							<div class="text_align_right">
-								<p class="counter-heading">LED TV Touchscreen</p>
+								<p class="counter-heading">LED Display Touchscreen</p>
 							</div>
 							<h5 class="counter-count">848</h5>
 						</div>

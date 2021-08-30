@@ -73,9 +73,6 @@
 								</ul>
 							</div>
 						</div>
-						<!-- <div class="float-right">
-							<div class="make_appo"> <a class="btn white_btn" href="make_appointment.html">Make Appointment</a> </div>
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -87,7 +84,7 @@
 				<div class="row">
 					<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 						<!-- logo start -->
-						<div class="logo"> <a href="<?= base_url('Home') ?>"><img src="<?= base_url('public/assetFrontEnd/') ?>images/logos/it_logo.png" alt="logo" /></a> </div>
+						<div class="logo"> <a href="<?= base_url('Home') ?>"><img src="<?= base_url('public/assetFrontEnd/') ?>images/logos/logo.png" alt="logo" /></a> </div>
 						<!-- logo end -->
 					</div>
 					<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
@@ -95,9 +92,9 @@
 						<div class="menu_side">
 							<div id="navbar_menu">
 								<ul class="first-ul">
-									<li> <a class="active" href="<?= base_url('Home') ?>">Home</a>
+									<li> <a class=" <?= (in_array(current_url(), [base_url('Home'), base_url('/')])) ? 'active' : '' ?>" href="<?= base_url('Home') ?>">Home</a>
 									</li>
-									<li> <a href="<?= base_url('Layanan') ?>">Layanan</a>
+									<li> <a class=" <?= (in_array(current_url(), [base_url('Layanan'), base_url('/')])) ? 'active' : '' ?>" href="<?= base_url('Layanan') ?>">Layanan</a>
 										<ul>
 											<li><a href="<?= base_url('Layanan/videotron') ?>">Videotron</a></li>
 											<li><a href="<?= base_url('Layanan/ledTvTouchscreen') ?>">LED TV Touchscreen</a></li>
@@ -105,12 +102,11 @@
 											<li><a href="<?= base_url('Layanan/projektor') ?>">Projector</a></li>
 										</ul>
 									</li>
-									<li> <a href="<?= base_url('Galery') ?>">Galery</a>
+									<li> <a class=" <?= (in_array(current_url(), [base_url('Galery'), base_url('/')])) ? 'active' : '' ?>" href="<?= base_url('Galery') ?>">Galery</a>
 									</li>
-									<li> <a href="it_contact.html">Tentang Kami</a>
+									<li> <a class=" <?= (in_array(current_url(), [base_url('Contact'), base_url('/')])) || (in_array(current_url(), [base_url('Faq'), base_url('/')])) ? 'active' : '' ?>" href="#">Tentang Kami</a>
 										<ul>
 											<li><a href="<?= base_url('Contact') ?>">Kontak Kami</a></li>
-											<!-- <li><a href="it_contact.html">Profil Kami</a></li> -->
 											<li><a href="<?= base_url('Faq') ?>">Faq</a></li>
 										</ul>
 									</li>

@@ -7,7 +7,7 @@ class GaleryModel extends CI_Model
 	// Get data tb_layanan
 	public function index()
 	{
-		return $this->db->get('tb_galery')->result_array();
+		return $this->db->get('tb_galery');
 	}
 
 	//Store date Galery
@@ -86,5 +86,21 @@ class GaleryModel extends CI_Model
 		unlink(FCPATH . './public/image/galery/' . $foto['foto']);
 		$this->db->where('id', $id);
 		$this->db->delete('tb_galery');
+	}
+
+	// Get Detail getDetailGalery
+	public function getDetail($foto)
+	{
+		$this->db->where('foto', $foto);
+		return $this->db->get('tb_galery');
+	}
+
+	public function ggetDetail($foto)
+	{
+		$this->db->select('*');
+		$this->db->from('tb_galery');
+		$this->db->join('tb_layanan', 'tb_layanan.slug = tb_galery.slug');
+		$this->db->where('tb_galery.foto', $foto);
+		return $this->db->get();
 	}
 }

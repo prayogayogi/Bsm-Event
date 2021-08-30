@@ -27,7 +27,7 @@
 				<div class="row">
 					<div class="col-xl-6 col-lg-12 col-md-12">
 						<div class="product_detail_feature_img hizoom hi2">
-							<div class='hizoom hi2'> <img src="<?= base_url('public/image/layanan/') . $getDetail['foto'] ?>" alt="#" /> </div>
+							<div class='hizoom hi2'> <img src="<?= base_url('public/image/galery/') . $getDetail['foto'] ?>" alt="#" /> </div>
 						</div>
 					</div>
 					<div class="col-xl-6 col-lg-12 col-md-12 product_detail_side detail_style1">
@@ -57,7 +57,7 @@
 							<div class="tab_bar_section">
 								<ul class="nav nav-tabs" role="tablist">
 									<li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#description">Description</a> </li>
-									<!-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#reviews">Reviews (2)</a> </li> -->
+									<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#reviews">Reviews (2)</a> </li>
 								</ul>
 								<!-- Tab panes -->
 								<div class="tab-content">
@@ -67,7 +67,7 @@
 											</p>
 										</div>
 									</div>
-									<div id="reviews" class="tab-pane fade" style="display: none;">
+									<div id="reviews" class="tab-pane fade">
 										<div class="product_review">
 											<h3>Reviews (2)</h3>
 											<div class="commant-text row">
@@ -134,7 +134,7 @@
 								<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/image/galery/') . $getJoins['foto'] ?>" alt=""> </div>
 								<div class="product_detail_btm">
 									<div class="center">
-										<h4><?= $getJoins['jenis'] ?></h4>
+										<h4><a href="<?= base_url('Layanan') ?>"><?= $getJoins['jenis'] ?></a></h4>
 									</div>
 									<div class="starratin">
 										<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>

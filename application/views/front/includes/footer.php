@@ -79,7 +79,7 @@
 							<h2>MINTA PENAWARAN GRATIS</h2>
 							<p>Dapatkan jawaban dan saran dari orang yang Anda inginkan.</p>
 						</div>
-						<div class="button_Section_cont"> <a class="btn dark_gray_bt" href="<?= base_url('Contact') ?>">Kontak kami</a> </div>
+						<div class="button_Section_cont"> <a class="btn dark_gray_bt" href="https://wa.me/<?= $getkontak['no_hp'] ?>?text=Saya%20mau%20order%21" target="blank">Kontak kami</a> </div>
 					</div>
 				</div>
 			</div>
@@ -97,11 +97,9 @@
 				</div>
 				<div class="full">
 					<ul class="brand_list">
-						<li><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/brand_icon1.png" alt="#" /></li>
-						<li><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/brand_icon2.png" alt="#" /></li>
-						<li><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/brand_icon3.png" alt="#" /></li>
-						<li><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/brand_icon4.png" alt="#" /></li>
-						<li><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/brand_icon5.png" alt="#" /></li>
+						<?php foreach ($getCilent as $getCilents) : ?>
+							<li><img src="<?= base_url('public/image/cilent/') . $getCilents['foto'] ?>" width="200px" alt="#" /></li>
+						<?php endforeach; ?>
 					</ul>
 				</div>
 			</div>
@@ -160,19 +158,18 @@
 							<h2>Layanan</h2>
 						</div>
 						<ul class="footer-menu">
-							<li><a href="it_data_recovery.html"><i class="fa fa-angle-right"></i> Videotron Indoor</a></li>
-							<li><a href="it_computer_repair.html"><i class="fa fa-angle-right"></i> LED TV Touchscreen</a></li>
-							<li><a href="it_mobile_service.html"><i class="fa fa-angle-right"></i> LED Display Stand Touchscreen</a></li>
-							<li><a href="it_mobile_service.html"><i class="fa fa-angle-right"></i> Projector</a></li>
+							<li><a href="<?= base_url('Layanan/videotron') ?>"><i class="fa fa-angle-right"></i> Videotron Indoor</a></li>
+							<li><a href="<?= base_url('Layanan/ledTvTouchscreen') ?>"><i class="fa fa-angle-right"></i> LED TV Touchscreen</a></li>
+							<li><a href="<?= base_url('Layanan/ledDisplay') ?>"><i class="fa fa-angle-right"></i> LED Display Stand Touchscreen</a></li>
+							<li><a href="<?= base_url('Layanan/projektor') ?>"><i class="fa fa-angle-right"></i> Projector</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
 						<div class="main-heading left_text">
 							<h2>HUBUNGI KAMI</h2>
 						</div>
-						<p>123 Second Street Fifth Avenue,<br>
-							Manhattan, New York<br>
-							<span style="font-size:18px;"><a href="tel:+9876543210">+987 654 3210</a></span>
+						<p><?= $getkontak['alamat']; ?><br><br>
+							<span style="font-size:18px;"><a href="tel:<?= $getkontak['no_hp']; ?>"><?= $getkontak['no_hp']; ?></a></span>
 						</p>
 						<div class="footer_mail-section">
 							<form>
@@ -188,10 +185,17 @@
 				</div>
 			</div>
 			<div class="cprt d-flex justify-content-cente">
-				<p>BSM Compro 2020 © Copyrights 2019 Design by yprdev.com</p>
+				<p>BSM Compro 2020 © Copyrights <?= date('Y'); ?></p>
 			</div>
 		</div>
 	</div>
+	<a class="wafixed" href="https://wa.me/<?= $getkontak['no_hp'] ?>?text=Saya%20mau%20order%21" style="position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;" target="_blank"><span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x text-success"></i>
+			<i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+		</span></a>
 </footer>
 <!-- end footer -->
 <!-- js section -->
@@ -214,7 +218,7 @@
 <script src="<?= base_url('public/assetFrontEnd/') ?>revolution/js/extensions/revolution.extension.navigation.min.js"></script>
 <script src="<?= base_url('public/assetFrontEnd/') ?>revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="<?= base_url('public/assetFrontEnd/') ?>revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="<?= base_url('public/assetFrontEnd/') ?>revolution/js/extensions/revolution.extension.video.min.js"></script>
+<!-- <script src="<?= base_url('public/assetFrontEnd/') ?>revolution/js/extensions/revolution.extension.video.min.js"></script> -->
 <!-- map js -->
 <script>
 	// This example adds a marker to indicate the position of Bondi Beach in Sydney,

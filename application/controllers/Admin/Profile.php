@@ -29,7 +29,7 @@ class Profile extends CI_Controller
 	public function kontak()
 	{
 		$data['title'] = "Kontak";
-		$data['getKontak'] = $this->CompanyModel->getKontak();
+		$data['getKontak'] = $this->CompanyModel->getKontak()->result_array();
 		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$this->load->view('back/includes/sidebar', $data);
 		$this->load->view('back/includes/navbar', $data);

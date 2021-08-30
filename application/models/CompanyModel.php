@@ -13,7 +13,7 @@ class CompanyModel extends CI_Model
 	// Get data tb_company
 	public function getKontak()
 	{
-		return $this->db->get('tb_kontak')->result_array();
+		return $this->db->get('tb_kontak');
 	}
 
 	// Store data tb_layana
