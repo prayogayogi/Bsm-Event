@@ -13,7 +13,7 @@
 							<div class='px-3 py-3 d-flex justify-content-between'>
 								<h3 class='card-title'>Layanan</h3>
 								<div class="card-right d-flex align-items-center">
-									<p>$50 </p>
+									<p><?= $numLayanan; ?></p>
 								</div>
 							</div>
 							<div class="chart-wrapper">
@@ -64,7 +64,7 @@
 							<div class='px-3 py-3 d-flex justify-content-between'>
 								<h3 class='card-title'>Admin</h3>
 								<div class="card-right d-flex align-items-center">
-									<p>423 </p>
+									<p><?= $numAdmin; ?></p>
 								</div>
 							</div>
 							<div class="chart-wrapper">

@@ -12,7 +12,7 @@ class UserAppModel extends CI_Model
 	// Get data tb_userapp
 	public function index()
 	{
-		return $this->db->get('tb_userapp')->result_array();
+		return $this->db->get('tb_userapp');
 	}
 
 	// Store data tb_userApp

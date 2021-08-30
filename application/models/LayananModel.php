@@ -10,6 +10,12 @@ class LayananModel extends CI_Model
 		return $this->db->get('tb_layanan')->result_array();
 	}
 
+	// Get num data tb_layanan
+	public function numLayanan()
+	{
+		return $this->db->get('tb_layanan');
+	}
+
 	// Store data tb_layana
 	public function store()
 	{

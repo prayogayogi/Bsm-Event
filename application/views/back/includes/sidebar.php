@@ -22,7 +22,7 @@
 		<div id="sidebar" class='active'>
 			<div class="sidebar-wrapper active">
 				<div class="sidebar-header">
-					<img src="<?= base_url('public/assetAdmin/') ?>assets/images/logo.svg" alt="" srcset="">
+					<img src="<?= base_url('public/assetAdmin/') ?>assets/images/logo.png" alt="" srcset="">
 				</div>
 				<div class="sidebar-menu">
 					<ul class="menu">

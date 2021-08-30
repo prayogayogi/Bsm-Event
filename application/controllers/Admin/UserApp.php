@@ -17,7 +17,7 @@ class UserApp extends CI_Controller
 	public function index()
 	{
 		$data['title'] = "User App";
-		$data['index'] = $this->UserAppModel->index();
+		$data['index'] = $this->UserAppModel->index()->result_array();
 		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$this->load->view('back/includes/sidebar', $data);
 		$this->load->view('back/includes/navbar', $data);

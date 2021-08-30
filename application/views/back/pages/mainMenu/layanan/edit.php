@@ -39,6 +39,7 @@
 									<div class="form-group">
 										<label for="foto">Foto</label>
 										<input type="file" name="foto" id="foto" class="form-control">
+										<p><small class="text-muted">File type: jpg, png dan ukuran foto 800px x 800px</small></p>
 									</div>
 								</div>
 								<div class="col">
