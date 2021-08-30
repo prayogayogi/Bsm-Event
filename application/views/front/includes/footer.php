@@ -200,7 +200,7 @@
 <!-- end footer -->
 <!-- js section -->
 <script src="<?= base_url('public/assetFrontEnd/') ?>js/jquery.min.js"></script>
-<script src="<?= base_url('public/assetFrontEnd/') ?>js/bootstrap.min.js"></script>
+<!-- <script src="<?= base_url('public/assetFrontEnd/') ?>js/bootstrap.min.js"></script> -->
 <!-- menu js -->
 <script src="<?= base_url('public/assetFrontEnd/') ?>js/menumaker.js"></script>
 <!-- wow animation -->

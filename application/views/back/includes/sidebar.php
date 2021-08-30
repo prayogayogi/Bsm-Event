@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Admin | <?= $title; ?></title>
+	<title>BSM Admin | <?= $title; ?></title>
 
 	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/css/bootstrap.css">
 	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/vendors/simple-datatables/style.css">
@@ -60,12 +60,12 @@
 							</a>
 						</li>
 
-						<li class="sidebar-item <?= (current_url() == base_url('Admin/Testimonial')) ? 'active' : '' ?>">
+						<!-- <li class="sidebar-item <?= (current_url() == base_url('Admin/Testimonial')) ? 'active' : '' ?>">
 							<a href="<?= base_url('Admin/Testimonial') ?>" class='sidebar-link'>
 								<i data-feather="database" width="20"></i>
 								<span>Testimonial</span>
 							</a>
-						</li>
+						</li> -->
 
 						<li class="sidebar-item  <?= (current_url() == base_url('Admin/Cilent')) ? 'active' : '' ?>">
 							<a href="<?= base_url('Admin/Cilent') ?>" class='sidebar-link'>

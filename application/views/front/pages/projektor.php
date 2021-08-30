@@ -30,7 +30,7 @@
 						<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/image/galery/') . $projectors['foto'] ?>" alt="#" /> </div>
 						<div class="service_cont">
 							<h3 class="service_head"><?= $projectors['jenis_id']; ?></h3>
-							<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details/index/') . $projectors['slug']  ?>">View Product</a> </div>
+							<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details/detailGalery/') . $projectors['slug'] ?>/<?= $projectors['foto'] ?>">View Product</a> </div>
 						</div>
 					</div>
 				</div>

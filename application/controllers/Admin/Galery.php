@@ -17,7 +17,7 @@ class Galery extends CI_Controller
 	public function index()
 	{
 		$data['title'] = "Galery";
-		$data['index'] = $this->GaleryModel->index();
+		$data['index'] = $this->GaleryModel->index()->result_array();
 		$data['userLogin'] = $this->UserAppModel->userLogin();
 		$data['service'] = $this->LayananModel->index();
 		$this->load->view('back/includes/sidebar', $data);

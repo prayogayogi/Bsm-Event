@@ -34,11 +34,10 @@
 						<div class="product-heading">
 							<h2><?= $getDetail['jenis']; ?></h2>
 						</div>
-						<div class="product-detail-side"><span class="new-price">Rp <?= rupiah($getDetail['price']); ?></span> <span class="rating"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </span> <span class="review">(5 customer review)</span> </div>
+						<div class="product-detail-side"><span class="new-price">Rp <?= rupiah($getDetail['price']); ?></span> <span class="rating"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </span> </div>
 						<div class="detail-contant">
-							<form class="cart" method="post" action="it_cart.html">
-								<button type="submit" class="btn sqaure_bt">Pesan Sekarang</button>
-							</form>
+							<a href="https://wa.me/<?= $getkontak['no_hp'] ?>?text=Saya%20mau%20order%21" target="blank" class="btn sqaure_bt">Pesan Sekarang</a>
+
 						</div>
 						<div class="share-post"> <a href="#" class="share-text">Share</a>
 							<ul class="social_icons">

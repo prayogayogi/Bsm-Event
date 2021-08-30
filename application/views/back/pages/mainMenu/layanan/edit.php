@@ -28,6 +28,12 @@
 								<?= form_error('jenis', '<small class="text-danger ml-2">', '</small>') ?>
 							</div>
 
+							<div class="form-group">
+								<label for="price">price Layanan</label>
+								<input type="text" name="price" class="form-control" id="price" value="<?= $index['price'] ?>" autocomplete="off">
+								<?= form_error('price', '<small class="text-danger ml-2">', '</small>') ?>
+							</div>
+
 							<div class="row">
 								<div class="col col-4">
 									<div class="form-group">

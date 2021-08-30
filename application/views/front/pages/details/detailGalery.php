@@ -25,95 +25,11 @@
 		<div class="row">
 			<div class="col-md-9">
 				<div class="row">
-					<div class="col-xl-6 col-lg-12 col-md-12">
-						<div class="product_detail_feature_img hizoom hi2">
-							<div class='hizoom hi2'> <img src="<?= base_url('public/image/galery/') . $getDetail['foto'] ?>" alt="#" /> </div>
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-12 col-md-12 product_detail_side detail_style1">
-						<div class="product-heading">
-							<h2><?= $getDetail['jenis_id']; ?></h2>
-						</div>
-						<div class="product-detail-side"><span class="new-price">Rp <?= rupiah($getDetail['price']); ?></span> <span class="rating"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </span> <span class="review">(5 customer review)</span> </div>
-						<div class="detail-contant">
-							<form class="cart" method="post" action="it_cart.html">
-								<button type="submit" class="btn sqaure_bt">Pesan Sekarang</button>
-							</form>
-						</div>
-						<div class="share-post"> <a href="#" class="share-text">Share</a>
-							<ul class="social_icons">
-								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12 service_blog margin_bottom_50">
 						<div class="full">
-							<div class="tab_bar_section">
-								<ul class="nav nav-tabs" role="tablist">
-									<li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#description">Description</a> </li>
-									<!-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#reviews">Reviews (2)</a> </li> -->
-								</ul>
-								<!-- Tab panes -->
-								<div class="tab-content">
-									<div id="description" class="tab-pane active">
-										<div class="product_desc">
-											<?= $getDetail['deskripsi']; ?>
-											</p>
-										</div>
-									</div>
-									<!-- <div id="reviews" class="tab-pane fade">
-										<div class="product_review">
-											<h3>Reviews (2)</h3>
-											<div class="commant-text row">
-												<div class="col-lg-2 col-md-2 col-sm-4">
-													<div class="profile"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/client1.png" alt="#"> </div>
-												</div>
-												<div class="col-lg-10 col-md-10 col-sm-8">
-													<h5>David</h5>
-													<p><span class="c_date">March 2, 2018</span> | <span><a rel="nofollow" class="comment-reply-link" href="#">Reply</a></span></p>
-													<span class="rating"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </span>
-													<p class="msg">ThisThis book is a treatise on the theory of ethics, very popular during the Renaissance.
-														The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet.. </p>
-												</div>
-											</div>
-											<div class="commant-text row">
-												<div class="col-lg-2 col-md-2 col-sm-4">
-													<div class="profile"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/client2.png" alt="#"> </div>
-												</div>
-												<div class="col-lg-10 col-md-10 col-sm-8">
-													<h5>Jack</h5>
-													<p><span class="c_date">March 2, 2018</span> | <span><a rel="nofollow" class="comment-reply-link" href="#">Reply</a></span></p>
-													<span class="rating"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </span>
-													<p class="msg">Nunc augue purus, posuere in accumsan sodales ac, euismod at est. Nunc faccumsan ermentum consectetur metus placerat mattis. Praesent mollis justo felis, accumsan faucibus mi maximus et. Nam hendrerit mauris id scelerisque placerat. Nam vitae imperdiet turpis</p>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="full review_bt_section">
-														<div class="float-right"> <a class="btn sqaure_bt" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Leave a Review</a> </div>
-													</div>
-													<div class="full">
-														<div id="collapseExample" class="full collapse commant_box">
-															<form accept-charset="UTF-8" action="index.html" method="post">
-																<input id="ratings-hidden" name="rating" type="hidden">
-																<textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." required=""></textarea>
-																<div class="full_bt center">
-																	<button class="btn sqaure_bt" type="submit">Save</button>
-																</div>
-															</form>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div> -->
-								</div>
+							<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/image/galery/') . $getDetail['foto'] ?>" alt="#" /> </div>
+							<div class="service_cont">
+								<h3 class="service_head"><?= $getDetail['jenis_id']; ?></h3>
 							</div>
 						</div>
 					</div>
@@ -134,12 +50,11 @@
 								<div class="product_img"> <img class="img-responsive" src="<?= base_url('public/image/galery/') . $getJoins['foto'] ?>" alt=""> </div>
 								<div class="product_detail_btm">
 									<div class="center">
-										<h4><a href="<?= base_url('Layanan') ?>"><?= $getJoins['jenis'] ?></a></h4>
+										<h4><a href="<?= base_url('Details/detailGalery/') . $getJoins['slug'] ?>/<?= $getJoins['foto'] ?>"><?= $getJoins['jenis'] ?></a></h4>
 									</div>
 									<div class="starratin">
 										<div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
 									</div>
-
 								</div>
 							</div>
 						</div>

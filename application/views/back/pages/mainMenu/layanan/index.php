@@ -86,6 +86,12 @@
 								</div>
 
 								<div class="form-group">
+									<label for="price">price Layanan</label>
+									<input type="text" name="price" class="form-control" id="price" placeholder="Harga Layanan" value="<?= set_value('price'); ?>" autocomplete="off" autofocus>
+									<?= form_error('price', '<small class="text-danger ml-2">', '</small>') ?>
+								</div>
+
+								<div class="form-group">
 									<label for="foto">Foto</label>
 									<input type="file" name="foto" id="foto" class="form-control">
 									<?= form_error('foto', '<small class="text-danger ml-2">', '</small>') ?>

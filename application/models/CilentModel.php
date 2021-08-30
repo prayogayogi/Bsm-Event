@@ -10,6 +10,12 @@ class CilentModel extends CI_Model
 		return $this->db->get('tb_cilent')->result_array();
 	}
 
+	// Get data tb_cilent
+	public function numCilent()
+	{
+		return $this->db->get('tb_cilent');
+	}
+
 	//Store date Cilent
 	public function store()
 	{

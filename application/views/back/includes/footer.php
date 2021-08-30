@@ -5,7 +5,7 @@
 			<p>2020 &copy; Voler</p>
 		</div>
 		<div class="float-right">
-			<p>Crafted with <span class='text-danger'><i data-feather="heart"></i></span> by <a href="http://ahmadsaugi.com">Ahmad Saugi</a></p>
+			<p>Crafted with <span class='text-danger'><i data-feather="heart"></i></span> by <a href="www.bsmevent.com">Bsm <?= date('Y'); ?></a></p>
 		</div>
 	</div>
 </footer>

@@ -30,7 +30,7 @@
 						<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/image/galery/') . $getVideotrons['foto'] ?>" alt="#" /> </div>
 						<div class="service_cont">
 							<h3 class="service_head"><?= $getVideotrons['jenis_id']; ?></h3>
-							<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details/index/') . $getVideotrons['slug'] ?>">View Product</a> </div>
+							<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details/detailGalery/') . $getVideotrons['slug'] ?>/<?= $getVideotrons['foto'] ?>">View Product</a> </div>
 						</div>
 					</div>
 				</div>

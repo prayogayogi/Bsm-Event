@@ -33,6 +33,7 @@ class LayananModel extends CI_Model
 		$slug = implode("-", $out);
 		$data = [
 			'jenis' => $this->input->post('jenis'),
+			'price' => $this->input->post('price'),
 			'foto' => $files,
 			'deskripsi' => $this->input->post('deskripsi'),
 			'slug' => $slug,
@@ -77,6 +78,7 @@ class LayananModel extends CI_Model
 
 		$data = [
 			'jenis' => $this->input->post('jenis'),
+			'price' => $this->input->post('price'),
 			'deskripsi' => $this->input->post('deskripsi'),
 			'slug' => $slug
 		];

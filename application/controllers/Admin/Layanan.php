@@ -29,6 +29,7 @@ class Layanan extends CI_Controller
 	public function store()
 	{
 		$this->form_validation->set_rules('jenis', 'Jenis Layanan', 'required', ['required' => 'Jenis layanan harus di isi']);
+		$this->form_validation->set_rules('price', 'Price Layanan', 'required', ['required' => 'price layanan harus di isi']);
 		$this->form_validation->set_rules('deskripsi', 'Deskripsi Layanan', 'required', ['required' => 'Deskripsi harus di isi']);
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Layanan";
@@ -66,6 +67,7 @@ class Layanan extends CI_Controller
 	public function update($slug)
 	{
 		$this->form_validation->set_rules('jenis', 'Jenis Layanan', 'trim');
+		$this->form_validation->set_rules('price', 'Price Layanan', 'trim');
 		$this->form_validation->set_rules('foto', 'Foto Layanan', 'trim');
 		if ($this->form_validation->run() == FALSE) {
 			$data['title'] = "Update Layanan";
