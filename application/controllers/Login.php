@@ -36,7 +36,6 @@ class Login extends CI_Controller
 				if (password_verify($password, $data['password'])) {
 					$session = [
 						'email' => $data['email'],
-						'nama' => $data['nama']
 					];
 					$this->session->set_userdata($session);
 					$this->session->set_flashdata('status', '<div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -47,8 +46,8 @@ class Login extends CI_Controller
         </div>');
 					redirect('Admin/Dashboard');
 				} else {
-					$this->session->set_flashdata('status', '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-          <strong></strong>Password Kamu Salah.
+					$this->session->set_flashdata('status', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Password Kamu</strong> Salah..!
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -56,8 +55,8 @@ class Login extends CI_Controller
 					redirect('Login');
 				}
 			} else {
-				$this->session->set_flashdata('status', '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-          <strong> Email Kamu </strong>Salah..!!
+				$this->session->set_flashdata('status', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong> Email Kamu </strong>Salah..!
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>

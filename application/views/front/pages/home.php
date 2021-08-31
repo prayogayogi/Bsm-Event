@@ -70,7 +70,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
 				<div class="full text_align_left">
 					<h3>Kami adalah</h3>
-					<p class="text-justify">Pusat jasa penyewaan LED Videotron di Jakarta dengan harga terbaik, kami menyediakan LED Videotron dengan berbagai ukuran dan untuk kebutuhan indoor maupun outdoor, tidak hanya itu kami juga menyediakan sewa LED Smat TV Tourcscreen, LED Stand, Projector dan Screen dan berbagai kebutuhan multi media lainnya..</p>
+					<p class="text-justify">Pusat jasa penyewaan LED Videotron di Jakarta dengan harga terbaik, kami menyediakan LED Videotron dengan berbagai ukuran dan untuk kebutuhan indoor maupun outdoor, tidak hanya itu kami juga menyediakan sewa LED Smat TV Tourcscreen, LED Stand, Projector dan Screen dan berbagai kebutuhan multi media lainnya.</p>
 					<ul>
 						<?php foreach ($index as $indexs) : ?>
 							<li><i class="fa fa-check-circle"></i><?= $indexs['jenis']; ?></li>
@@ -101,7 +101,7 @@
 				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 					<div class="full text_align_center margin_bottom_30">
 						<div class="center">
-							<div class="icon"> <img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/i1.png" alt="#" /> </div>
+							<div class="icon"> <img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/best-price.png" alt="#" /> </div>
 						</div>
 						<h4 class="theme_color">Harga Lebih Murah</h4>
 						<p>Kami menawarkan harga lebih kompetitif jika dibandingkan ditempat lain.</p>
@@ -110,7 +110,7 @@
 				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 					<div class="full text_align_center margin_bottom_30">
 						<div class="center">
-							<div class="icon"> <img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/i2.png" alt="#" /> </div>
+							<div class="icon"> <img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/product.png" alt="#" /> </div>
 						</div>
 						<h4 class="theme_color">Produk Berkualitas</h4>
 						<p>Kami akan pastikan semua produk sewa kami berkualtais garansi</p>
@@ -119,7 +119,7 @@
 				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 					<div class="full text_align_center margin_bottom_30">
 						<div class="center">
-							<div class="icon"> <img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/i3.png" alt="#" /> </div>
+							<div class="icon"> <img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/badge.png" alt="#" /> </div>
 						</div>
 						<h4 class="theme_color">Garansi Kerusakan</h4>
 						<p>Produk kami bermasalah, kami akan ganti dengan unit baru kami.</p>
@@ -128,14 +128,13 @@
 				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 					<div class="full text_align_center margin_bottom_30 margin_0">
 						<div class="center">
-							<div class="icon"> <img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/i4.png" alt="#" /> </div>
+							<div class="icon"> <img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/on-time.png" alt="#" /> </div>
 						</div>
 						<h4 class="theme_color">Tepat Waktu</h4>
 						<p>Kami selalu menghargai waktu anda, sehingga kami akan selalu tepat waktu dalam pengiriman</p>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 	<!-- end section -->
@@ -158,67 +157,90 @@
 						<div class="col-md-4">
 							<div class="full">
 								<div class="service_blog_inner">
-									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si1.png" alt="#" /></div>
+									<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="3" y="4" width="18" height="12" rx="1" />
+											<line x1="7" y1="20" x2="17" y2="20" />
+											<line x1="9" y1="16" x2="9" y2="20" />
+											<line x1="15" y1="16" x2="15" y2="20" />
+										</svg></div>
 									<a href="<?= base_url('Layanan/videotron') ?>">
 										<h4 class="service-heading">LED Videotron Indoor</h4>
 									</a>
-									<p>Sewa LED Videotron Indoor Mulai dari harga 4jtaan.</p>
+									<p>LED Videotron Indoor dengan harga terjangkau dan berkualitas.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="full">
 								<div class="service_blog_inner">
-									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si2.png" alt="#" /></div>
+									<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-analytics" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="3" y="4" width="18" height="12" rx="1" />
+											<path d="M7 20h10" />
+											<path d="M9 16v4" />
+											<path d="M15 16v4" />
+											<path d="M9 12v-4" />
+											<path d="M12 12v-1" />
+											<path d="M15 12v-2" />
+											<path d="M12 12v-1" />
+										</svg></div>
 									<a href="<?= base_url('Layanan/videotron') ?>">
 										<h4 class="service-heading">LED Videotron Outdoor</h4>
 									</a>
-									<p>Sewa LED Videotron Outdoor mulai dari harga 500.</p>
+									<p>LED Videotron Outdoor dengan harga terjangkau dan berkualitas.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="full">
 								<div class="service_blog_inner">
-									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si3.png" alt="#" /></div>
+									<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="13" y="8" width="8" height="12" rx="1" />
+											<path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
+											<line x1="16" y1="9" x2="18" y2="9" />
+										</svg></div>
 									<a href="<?= base_url('Layanan/ledTvTouchscreen') ?>">
 										<h4 class="service-heading">LED TV Touchscreen</h4>
 									</a>
-									<p>Sewa LED / LCD TV murah mulai dari harga 600K.</p>
+									<p>LED / LCD TV murah dengan harga terjangkau dan berkualitas.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="full">
 								<div class="service_blog_inner">
-									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si4.png" alt="#" /></div>
+									<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-analytics" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="3" y="4" width="18" height="12" rx="1" />
+											<line x1="7" y1="20" x2="17" y2="20" />
+											<line x1="9" y1="16" x2="9" y2="20" />
+											<line x1="15" y1="16" x2="15" y2="20" />
+											<path d="M8 12l3 -3l2 2l3 -3" />
+										</svg></div>
 									<a href="<?= base_url('Layanan/ledDisplay') ?>">
 										<h4 class="service-heading">LED Display Stand Touchscreen</h4>
 									</a>
-									<p>Sewa LED Stand Smart TV Touch screen mulai dari Rp. 1,4Jt.</p>
+									<p>LED Stand Smart TV Touch screen dengan harga terjangkau dan berkualitas.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="full">
 								<div class="service_blog_inner">
-									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si5.png" alt="#" /></div>
+									<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-tv" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<rect x="3" y="7" width="18" height="13" rx="2" />
+											<polyline points="16 3 12 7 8 3" />
+										</svg></div>
 									<a href="<?= base_url('Layanan/projektor') ?>">
 										<h4 class="service-heading">Projector & Screen</h4>
 									</a>
-									<p>Sewa Projector dan Screen mulai dari harga Rp. 800K.</p>
+									<p>Projector dan Screen dengan harga terjangkau dan berkualitas.</p>
 								</div>
 							</div>
 						</div>
-						<!-- <div class="col-md-4">
-							<div class="full">
-								<div class="service_blog_inner">
-									<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si6.png" alt="#" /></div>
-									<h4 class="service-heading">Multimedia Lainnya</h4>
-									<p>Anda butuh sewa alat multimedia lainnya seperti laptop dan komputer?.</p>
-								</div>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -364,7 +386,7 @@
 					<div class="full">
 						<div class="main_heading text_align_right">
 							<h2>Penjualan kami</h2>
-							<p class="large">Berikut jumlah total penjualan kami dan pastikan anda termasuk di dalam nya.</p>
+							<p class="large">Berikut jumlah pelangan kami dan pastikan anda termasuk di dalam nya.</p>
 						</div>
 					</div>
 				</div>
@@ -374,28 +396,54 @@
 				<div class="col-md-8">
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin_bottom_50">
-							<div class="text_align_right"><i class="fa fa-desktop"></i></i></div>
+							<div class="text_align_right"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-analytics" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="3" y="4" width="18" height="12" rx="1" />
+									<path d="M7 20h10" />
+									<path d="M9 16v4" />
+									<path d="M15 16v4" />
+									<path d="M9 12v-4" />
+									<path d="M12 12v-1" />
+									<path d="M15 12v-2" />
+									<path d="M12 12v-1" />
+								</svg></div>
 							<div class="text_align_right">
 								<p class="counter-heading text_align_right">Videotron</p>
 							</div>
 							<h5 class="counter-count">2150</h5>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin_bottom_50">
-							<div class="text_align_right"><i class="fa fa-laptop"></i></div>
+							<div class="text_align_right"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="13" y="8" width="8" height="12" rx="1" />
+									<path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
+									<line x1="16" y1="9" x2="18" y2="9" />
+								</svg></i></div>
 							<div class="text_align_right">
 								<p class="counter-heading text_align_right">LED TV Touchscreen </p>
 							</div>
 							<h5 class="counter-count">1280</h5>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin_bottom_50">
-							<div class="text_align_right"><i class="fa fa-tv"></i></div>
+							<div class="text_align_right"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-analytics" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="3" y="4" width="18" height="12" rx="1" />
+									<line x1="7" y1="20" x2="17" y2="20" />
+									<line x1="9" y1="16" x2="9" y2="20" />
+									<line x1="15" y1="16" x2="15" y2="20" />
+									<path d="M8 12l3 -3l2 2l3 -3" />
+								</svg></div>
 							<div class="text_align_right">
 								<p class="counter-heading">LED Display Touchscreen</p>
 							</div>
 							<h5 class="counter-count">848</h5>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin_bottom_50">
-							<div class="text_align_right"><i class="fa fa-windows"></i></div>
+							<div class="text_align_right"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-tv" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<rect x="3" y="7" width="18" height="13" rx="2" />
+									<polyline points="16 3 12 7 8 3" />
+								</svg></div>
 							<div class="text_align_right">
 								<p class="counter-heading">Projector</p>
 							</div>
@@ -407,3 +455,4 @@
 		</div>
 	</div>
 	<!-- end section -->
+</div>

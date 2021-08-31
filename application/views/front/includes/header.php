@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 	<!-- site metas -->
-	<title><?= $title; ?></title>
+	<title>BSM <?= date('Y') ?> | <?= $title; ?></title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -55,8 +55,8 @@
 						<div class="full">
 							<div class="topbar-left">
 								<ul class="list-inline">
-									<li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">Villa mas indah blok C9 no,8 RT.002/RW.8, Kota Bks, Jawa Barat 17123a</span> </li>
-									<li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:jasaweb@gmail.com">jasaweb@gmail.com</a></span> </li>
+									<li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">Villa mas indah blok C9 no,8 , Kota Bks, Jawa Barat </span> </li>
+									<li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:jasaweb@gmail.com"><?= $getkontak['email']; ?></a></span> </li>
 								</ul>
 							</div>
 						</div>
@@ -65,11 +65,9 @@
 						<div class="float-left">
 							<div class="social_icon">
 								<ul class="list-inline">
-									<li><a class="fa fa-facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"></a></li>
-									<li><a class="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
-									<li><a class="fa fa-twitter" href="https://twitter.com" title="Twitter" target="_blank"></a></li>
-									<li><a class="fa fa-linkedin" href="https://www.linkedin.com" title="LinkedIn" target="_blank"></a></li>
-									<li><a class="fa fa-instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
+									<li><a class="fa fa-facebook" href="<?= $getkontak['facebook']; ?>" title="Facebook" target="_blank"></a></li>
+									<li><a class="fa fa-google" href="https://www.google.com/" title="Twitter" target="_blank"></a></li>
+									<li><a class="fa fa-instagram" href="<?= $getkontak['instagram']; ?>" title="Instagram" target="_blank"></a></li>
 								</ul>
 							</div>
 						</div>
@@ -84,7 +82,7 @@
 				<div class="row">
 					<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 						<!-- logo start -->
-						<div class="logo"> <a href="<?= base_url('Home') ?>"><img src="<?= base_url('public/assetFrontEnd/') ?>images/logos/logo.png" alt="logo" /></a> </div>
+						<div class="logo"> <a href="<?= base_url('Home') ?>"><img src="<?= base_url('public/assetFrontEnd/') ?>images/logos/1logo.png" alt="logo" width="250px" /></a> </div>
 						<!-- logo end -->
 					</div>
 					<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
@@ -125,4 +123,3 @@
 		</div>
 		<!-- header bottom end -->
 	</header>
-	<!-- end header -->

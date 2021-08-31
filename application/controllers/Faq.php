@@ -12,7 +12,7 @@ class Faq extends CI_Controller
 	// Untuk layanan
 	public function index()
 	{
-		$data['title'] = "BSM Compro 2020 | Faq";
+		$data['title'] = "Faq";
 		$data['getCilent'] = $this->CilentModel->index();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
 		$this->load->view('front/includes/header', $data);

@@ -7,41 +7,38 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav d-flex align-items-center navbar-light ml-auto">
-				<!-- <li class="dropdown nav-icon">
+				<li class="dropdown nav-icon">
 					<a href="#" data-toggle="dropdown" class="nav-link  dropdown-toggle nav-link-lg nav-link-user">
 						<div class="d-lg-inline-block">
 							<i data-feather="bell"></i>
 						</div>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right dropdown-menu-large">
-						<h6 class='py-2 px-4'>Notifications</h6>
+						<h6 class='py-2 px-4'>Profile</h6>
 						<ul class="list-group rounded-none">
 							<li class="list-group-item border-0 align-items-start">
 								<div class="avatar bg-success mr-3">
-									<span class="avatar-content"><i data-feather="shopping-cart"></i></span>
+									<span class="avatar-content"> <img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/badge.png" alt="" srcset=""></span>
 								</div>
 								<div>
-									<h6 class='text-bold'>New Order</h6>
+									<h6 class='text-bold'><?= $userLogin['nama']; ?></h6>
 									<p class='text-xs'>
-										An order made by Ahmad Saugi for product Samsung Galaxy S69
+										<?= $userLogin['email']; ?> <br>
+										<?= $userLogin['alamat']; ?><br>
+										<?= $userLogin['no_hp']; ?>
 									</p>
 								</div>
 							</li>
 						</ul>
 					</div>
-				</li> -->
+				</li>
 				<li class="dropdown">
 					<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
 						<div class="avatar mr-1">
 							<img src="<?= base_url('public/image/userApp/') . $userLogin['foto'] ?>" alt="" srcset="">
 						</div>
-						<div class="d-none d-md-block d-lg-inline-block">Hi, <?= $userLogin['nama']; ?></div>
+						<div class="d-none d-md-block d-lg-inline-block">Hallo, <?= $userLogin['nama']; ?></div>
 					</a>
-					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="#"><i data-feather="user"></i> Account</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="<?= base_url('Logout') ?>" onclick="return confirm('Yakin Ingin keluar..?')"><i data-feather="log-out"></i> Logout</a>
-					</div>
 				</li>
 			</ul>
 		</div>

@@ -64,17 +64,6 @@
 			<div class="col-md-3">
 				<div class="side_bar">
 					<div class="side_bar_blog">
-						<h4>SEARCH</h4>
-						<div class="side_bar_search">
-							<div class="input-group stylish-input-group">
-								<input class="form-control" placeholder="Search" type="text">
-								<span class="input-group-addon">
-									<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="side_bar_blog">
 						<h4>DAPATKAN PENAWARAN</h4>
 						<p>Dapatkan penawaran yang menarik tentang jasa yang kami sediakan dan dapatkan dengan harga terbaik.</p>
 						<a class="btn sqaure_bt" href="<?= base_url('Layanan') ?>">Lihat Layanan</a>

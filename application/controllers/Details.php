@@ -12,7 +12,7 @@ class Details extends CI_Controller
 	// Untuk layanan
 	public function index($slug)
 	{
-		$data['title'] = "BSM Compro 2020 | Detail Product";
+		$data['title'] = "Detail Product";
 		$data['getDetail'] = $this->LayananModel->getDetail($slug)->row_array();
 		$data['getJoin'] = $this->LayananModel->getJoin($slug)->result_array();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
@@ -25,7 +25,7 @@ class Details extends CI_Controller
 	// Untuk layanan
 	public function detailGalery($slug, $foto)
 	{
-		$data['title'] = "BSM Compro 2020 | Detail Product";
+		$data['title'] = "Detail Product";
 		$data['getDetail'] = $this->GaleryModel->getDetail($foto)->row_array();
 		$data['getJoin'] = $this->LayananModel->getJoin($slug)->result_array();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();

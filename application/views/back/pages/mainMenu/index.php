@@ -1,6 +1,7 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 <div class="main-content container-fluid">
 	<div class="page-title">
+		<?= $this->session->flashdata('status');  ?>
 		<h3>Dashboard</h3>
 		<p class="text-subtitle text-muted">Dashboarad BSM Statict </p>
 	</div>

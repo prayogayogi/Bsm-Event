@@ -12,7 +12,7 @@ class Layanan extends CI_Controller
 	// Untuk layanan
 	public function index()
 	{
-		$data['title'] = "BSM Compro 2020 | Layanan";
+		$data['title'] = "Layanan";
 		$data['index'] = $this->LayananModel->index();
 		$data['getCilent'] = $this->CilentModel->index();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
@@ -24,7 +24,7 @@ class Layanan extends CI_Controller
 	// Untuk videotron
 	public function videotron()
 	{
-		$data['title'] = "BSM Compro 2020 | Layanan Videotron";
+		$data['title'] = "Layanan Videotron";
 		$data['getVideotron'] = $this->LayananModel->getVideotron()->result_array();
 		$data['getCilent'] = $this->CilentModel->index();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
@@ -36,7 +36,7 @@ class Layanan extends CI_Controller
 	// Untuk videotron
 	public function ledTvTouchscreen()
 	{
-		$data['title'] = "BSM Compro 2020 | Layanan Led Tv Touchscreen";
+		$data['title'] = "Layanan Led Tv Touchscreen";
 		$data['getLedTouc'] = $this->LayananModel->getLedTouc()->result_array();
 		$data['getCilent'] = $this->CilentModel->index();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
@@ -48,7 +48,7 @@ class Layanan extends CI_Controller
 	// Untuk videotron
 	public function ledDisplay()
 	{
-		$data['title'] = "BSM Compro 2020 | Layanan Led Display";
+		$data['title'] = "Layanan Led Display";
 		$data['getLedDisplay'] = $this->LayananModel->getLedDisplay()->result_array();
 		$data['getCilent'] = $this->CilentModel->index();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
@@ -60,7 +60,7 @@ class Layanan extends CI_Controller
 	// Untuk videotron
 	public function projektor()
 	{
-		$data['title'] = "BSM Compro 2020 | Layanan Led Display";
+		$data['title'] = "Projektor";
 		$data['projektor'] = $this->LayananModel->projektor()->result_array();
 		$data['getCilent'] = $this->CilentModel->index();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();

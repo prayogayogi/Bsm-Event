@@ -76,10 +76,10 @@
 					<div class="contact_us_section">
 						<div class="call_icon"> <img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/phone_icon.png" alt="#" /> </div>
 						<div class="inner_cont">
-							<h2>MINTA PENAWARAN GRATIS</h2>
+							<h2>KONSULTASI GRATIS</h2>
 							<p>Dapatkan jawaban dan saran dari orang yang Anda inginkan.</p>
 						</div>
-						<div class="button_Section_cont"> <a class="btn dark_gray_bt" href="https://wa.me/<?= $getkontak['no_hp'] ?>?text=Saya%20mau%20order%21" target="blank">Kontak kami</a> </div>
+						<div class="button_Section_cont"> <a class="btn dark_gray_bt" href="https://wa.me/<?= $getkontak['no_hp'] ?>?text=Halo%2C%20saya%20tertarik%20untuk%20order%20beberapa%20equipment%20di%20BSM.%20Bisa%20dibantu%3F" target="blank">Kontak kami</a> </div>
 					</div>
 				</div>
 			</div>
@@ -143,13 +143,17 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div class="main-heading left_text">
-							<h2>BSM Compro 2020</h2>
+							<h2>BSM EVENT <?= date('Y'); ?></h2>
 						</div>
-						<p>Tincidunt elit magnis nulla facilisis. Dolor sagittis maecenas. Sapien nunc amet ultrices, dolores sit ipsum velit purus aliquet, massa fringilla leo orci.</p>
+						<p>BSM Entertainment telah menyediakan
+							perencanaan Aktivasi Merek profesional,
+							manajemen dan eksekusi berdasarkan merek
+							pengalaman. Libatkan audiens Anda untuk merasakan,
+							rasakan, pikirkan, lakukan, dan hubungkan dengan merek Anda.</p>
 						<ul class="social_icons">
-							<li class="social-icon fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li class="social-icon tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li class="social-icon gp"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a class="fa fa-facebook" href="<?= $getkontak['facebook']; ?>" title="Facebook" target="_blank"></a></li>
+							<li><a class="fa fa-google" href="https://www.google.com/" title="Twitter" target="_blank"></a></li>
+							<li><a class="fa fa-instagram" href="<?= $getkontak['instagram']; ?>" title="Instagram" target="_blank"></a></li>
 						</ul>
 					</div>
 
@@ -168,8 +172,9 @@
 						<div class="main-heading left_text">
 							<h2>HUBUNGI KAMI</h2>
 						</div>
-						<p><?= $getkontak['alamat']; ?><br><br>
-							<span style="font-size:18px;"><a href="tel:<?= $getkontak['no_hp']; ?>"><?= $getkontak['no_hp']; ?></a></span>
+						<p><?= $getkontak['alamat']; ?></p>
+						<p>
+							<span style="font-size:18px;"><a href="tel:<?= $getkontak['no_hp']; ?>">+ <?= $getkontak['no_hp']; ?></a></span>
 						</p>
 						<div class="footer_mail-section">
 							<form>
@@ -185,11 +190,11 @@
 				</div>
 			</div>
 			<div class="cprt d-flex justify-content-cente">
-				<p>BSM Compro 2020 © Copyrights <?= date('Y'); ?></p>
+				<p>Bsm Event © Copyrights <?= date('Y'); ?></p>
 			</div>
 		</div>
 	</div>
-	<a class="wafixed" href="https://wa.me/<?= $getkontak['no_hp'] ?>?text=Saya%20mau%20order%21" style="position: fixed;
+	<a class="wafixed" href="https://wa.me/<?= $getkontak['no_hp'] ?>?text=Halo%2C%20saya%20tertarik%20untuk%20order%20beberapa%20equipment%20di%20BSM.%20Bisa%20dibantu%3F" style="position: fixed;
     right: 30px;
     bottom: 30px;
     z-index: 999;" target="_blank"><span class="fa-stack fa-lg">
@@ -200,7 +205,7 @@
 <!-- end footer -->
 <!-- js section -->
 <script src="<?= base_url('public/assetFrontEnd/') ?>js/jquery.min.js"></script>
-<!-- <script src="<?= base_url('public/assetFrontEnd/') ?>js/bootstrap.min.js"></script> -->
+<script src="<?= base_url('public/assetFrontEnd/') ?>js/bootstrap.min.js"></script>
 <!-- menu js -->
 <script src="<?= base_url('public/assetFrontEnd/') ?>js/menumaker.js"></script>
 <!-- wow animation -->

@@ -103,7 +103,7 @@
 					<div class="col-md-4">
 						<div class="full">
 							<div class="service_blog_inner">
-								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si1.png" alt="#"></div>
+								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/best-price.png" alt="#"></div>
 								<h4 class="service-heading">Harga Lebih Murah</h4>
 								<p>Kami menawarkan harga lebih kompetitif jika dibandingkan ditempat lain.</p>
 							</div>
@@ -112,7 +112,7 @@
 					<div class="col-md-4">
 						<div class="full">
 							<div class="service_blog_inner">
-								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si2.png" alt="#"></div>
+								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/product.png" alt="#"></div>
 								<h4 class="service-heading">Produk Berkualitas</h4>
 								<p>Kami akan pastikan semua produk sewa kami berkualtais garansi.</p>
 							</div>
@@ -121,9 +121,18 @@
 					<div class="col-md-4">
 						<div class="full">
 							<div class="service_blog_inner">
-								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si3.png" alt="#"></div>
+								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/badge.png" alt="#"></div>
 								<h4 class="service-heading">Garansi Kerusakan</h4>
 								<p>Produk kami bermasalah, kami akan ganti dengan unit baru kami.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="full">
+							<div class="service_blog_inner">
+								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/on-time.png" alt="#"></div>
+								<h4 class="service-heading">Tepat Waktu</h4>
+								<p>Kami selalu menghargai waktu anda, sehingga kami akan selalu tepat waktu dalam pengiriman.</p>
 							</div>
 						</div>
 					</div>
@@ -131,17 +140,6 @@
 			</div>
 			<div class="col-md-3">
 				<div class="side_bar">
-					<div class="side_bar_blog">
-						<h4>SEARCH</h4>
-						<div class="side_bar_search">
-							<div class="input-group stylish-input-group">
-								<input class="form-control" placeholder="Search" type="text">
-								<span class="input-group-addon">
-									<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-								</span>
-							</div>
-						</div>
-					</div>
 					<div class="side_bar_blog">
 						<h4>DAPATKAN PENAWARAN</h4>
 						<p>Dapatkan penawaran yang menarik tentang jasa yang kami sediakan dan dapatkan dengan harga terbaik.</p>

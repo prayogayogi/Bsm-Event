@@ -4,10 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?= $title; ?></title>
+	<title>BSM <?= date('Y') ?> | <?= $title; ?></title>
 	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/css/bootstrap.css">
 
-	<link rel="shortcut icon" href="<?= base_url('public/assetAdmin/') ?>assets/images/favicon.svg" type="image/x-icon">
+	<link rel="shortcut icon" href="<?= base_url('public/assetFrontEnd/') ?>images/fevicon/fevicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/css/app.css">
 </head>
 
@@ -20,9 +20,10 @@
 					<div class="card pt-4">
 						<div class="card-body">
 							<div class="text-center mb-5">
-								<h3>Sign In</h3>
-								<!-- <a href="<?= site_url('register') ?>"><img src="<?= base_url() ?>assets/logo resud.png" alt="logo" style="width: 80px; height:80px; margin-right:25px;" class="mb-3"></a> -->
+								<?= $this->session->flashdata('status');  ?>
+								<h3>Log In</h3>
 								<p>Please Sign To App.</p>
+								<a href="<?= site_url('register') ?>"><img src="<?= base_url('public/assetFrontEnd/') ?>images/logos/1logo.png" alt="logo" style="width: 130px; ;" class="mb-4"></a>
 							</div>
 							<form action="<?= base_url('Login/action') ?>" method="POST">
 								<div class="form-group position-relative has-icon-left">

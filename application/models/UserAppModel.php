@@ -117,4 +117,13 @@ class UserAppModel extends CI_Model
 		$this->db->where('slug', $slug);
 		$this->db->delete('tb_userapp');
 	}
+
+	// Untuk Ubah Password
+	function ubahPassword($id, $passwordBaru)
+	{
+		$data = ['password' => password_hash(($passwordBaru), PASSWORD_DEFAULT)];
+		$this->db->set($data);
+		$this->db->where(['id' => $id]);
+		$this->db->update('tb_userapp');
+	}
 }

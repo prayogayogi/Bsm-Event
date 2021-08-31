@@ -13,7 +13,7 @@
 
 	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
 	<link rel="stylesheet" href="<?= base_url('public/assetAdmin/') ?>assets/css/app.css">
-	<link rel="shortcut icon" href="<?= base_url('public/assetAdmin/') ?>assets/images/fevicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="<?= base_url('public/assetFrontEnd/') ?>images/fevicon/fevicon.png" type="image/x-icon">
 	<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 </head>
 
@@ -22,7 +22,9 @@
 		<div id="sidebar" class='active'>
 			<div class="sidebar-wrapper active">
 				<div class="sidebar-header">
-					<img src="<?= base_url('public/assetAdmin/') ?>assets/images/logo.png" alt="" srcset="">
+					<a href="<?= base_url('Admin/Dashboard') ?>">
+						<img src="<?= base_url('public/assetFrontEnd/') ?>images/logos/1logo.png" alt="" srcset="">
+					</a>
 				</div>
 				<div class="sidebar-menu">
 					<ul class="menu">
@@ -102,15 +104,20 @@
 
 						<li class='sidebar-title'>Authentication</li>
 
-
-
 						<li class="sidebar-item <?= (current_url() == base_url('Admin/UserApp')) ? 'active' : '' ?>">
 							<a href="<?= base_url('Admin/UserApp') ?>" class='sidebar-link'>
 								<i data-feather="users" width="20"></i>
 								<span>Admin</span>
 							</a>
-
 						</li>
+
+						<li class="sidebar-item" data-toggle="modal" data-target="#ubahPassword">
+							<a href="#" class='sidebar-link'>
+								<i data-feather="user" width="20"></i>
+								<span> Ubah Password</span>
+							</a>
+						</li>
+
 
 						<li class="sidebar-item">
 							<a href="<?= base_url('Logout') ?>" onclick="return confirm('Yakin Ingin keluar..?')" class='sidebar-link'>
@@ -124,3 +131,37 @@
 				<button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
 			</div>
 		</div>
+
+
+		<!-- Modal Ubah Password -->
+		<div class="modal fade" id="ubahPassword" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">Ubah Password</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form action="<?= base_url('Admin/UserApp/ubahPassword/') . $userLogin['id'] ?>" method="post">
+							<div class="row mb-3">
+								<div class="col">
+									<div class="form-group">
+										<label for="password">Password Lama</label>
+										<input type="password" name="passwordLama" class="form-control" autocomplete="off" id="password" placeholder="Masukan Password Lama" autocomplete="off">
+									</div>
+									<div class="form-group">
+										<label for="password2">Password Baru</label>
+										<input type="password" name="passwordBaru" class="form-control" autocomplete="off" id="password2" placeholder="Masukan Password Baru" autocomplete="off">
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary">Simpan</button>
+							<button type="resset" class="btn btn-dark px-4 ml-2" data-dismiss="modal">Close</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- akhir modal ubah password -->

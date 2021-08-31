@@ -12,7 +12,7 @@ class Home extends CI_Controller
 	// Untuk view Login
 	public function index()
 	{
-		$data['title'] = "BSM Compro 2020";
+		$data['title'] = "Home";
 		$data['index'] = $this->LayananModel->index();
 		$data['getCilent'] = $this->CilentModel->index();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
@@ -24,7 +24,7 @@ class Home extends CI_Controller
 	// Untuk layanan
 	public function layanan()
 	{
-		$data['title'] = "BSM Compro 2020 | Layanan";
+		$data['title'] = "Layanan";
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
 		$this->load->view('front/includes/header', $data);
 		$this->load->view('front/pages/layanan');

@@ -32,21 +32,21 @@
 								<div class="icon_bottom"> <i class="fa fa-road" aria-hidden="true"></i> </div>
 								<div class="info_cont">
 									<h4><?= $getkontak['alamat']; ?></h4>
-									<p>Melbourne Australia</p>
+									<p>Jakarta, Indonesai</p>
 								</div>
 							</div>
 							<div class="information_bottom left-side margin_bottom_20_all">
 								<div class="icon_bottom"> <i class="fa fa-user" aria-hidden="true"></i> </div>
 								<div class="info_cont">
 									<h4>+<?= $getkontak['no_hp']; ?></h4>
-									<p>Mon-Fri 8:30am-6:30pm</p>
+									<p>Senin-Jumat 08:30-18:30</p>
 								</div>
 							</div>
 							<div class="information_bottom left-side">
 								<div class="icon_bottom"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
 								<div class="info_cont">
 									<h4><?= $getkontak['email']; ?></h4>
-									<p>24/7 online support</p>
+									<p>Dukungan online 24/7</p>
 								</div>
 							</div>
 						</div>
@@ -54,7 +54,7 @@
 							<h4>Tanyaan apa yang anda butuhkan</h4>
 							<p>Kirim perminataan pesanan anda dengan mengirimkan form di bawah ini</p>
 							<div class="form_section">
-								<form class="form_contant" action="index.html">
+								<form class="form_contant" action="#">
 									<fieldset>
 										<div class="row">
 											<div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -72,7 +72,7 @@
 											<div class="field col-lg-12 col-md-12 col-sm-12 col-xs-12">
 												<textarea class="field_custom" placeholder="Messager" required></textarea>
 											</div>
-											<div class="center"><a class="btn main_bt" href="#">SUBMIT NOW</a></div>
+											<div class="center"><a class="btn main_bt" href="https://wa.me/<?= $getkontak['no_hp'] ?>?text=Halo%2C%20saya%20tertarik%20untuk%20order%20beberapa%20equipment%20di%20BSM.%20Bisa%20dibantu%3F" target="blank">SUBMIT NOW</a></div>
 										</div>
 									</fieldset>
 								</form>

@@ -12,7 +12,7 @@ class Galery extends CI_Controller
 	// Untuk layanan
 	public function index()
 	{
-		$data['title'] = "BSM Compro 2020 | Galery";
+		$data['title'] = "Galery";
 		$data['index'] = $this->GaleryModel->index()->result_array();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
 		$data['getCilent'] = $this->CilentModel->index();

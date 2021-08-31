@@ -36,67 +36,90 @@
 					<div class="col-md-4">
 						<div class="full">
 							<div class="service_blog_inner">
-								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si1.png" alt="#" /></div>
+								<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<rect x="3" y="4" width="18" height="12" rx="1" />
+										<line x1="7" y1="20" x2="17" y2="20" />
+										<line x1="9" y1="16" x2="9" y2="20" />
+										<line x1="15" y1="16" x2="15" y2="20" />
+									</svg></div>
 								<a href="<?= base_url('Layanan/videotron') ?>">
 									<h4 class="service-heading">LED Videotron Indoor</h4>
 								</a>
-								<p>Sewa LED Videotron Indoor Mulai dari harga 4jtaan.</p>
+								<p>LED Videotron Indoor dengan harga terjangkau dan berkualitas.</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="full">
 							<div class="service_blog_inner">
-								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si2.png" alt="#" /></div>
+								<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-analytics" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<rect x="3" y="4" width="18" height="12" rx="1" />
+										<path d="M7 20h10" />
+										<path d="M9 16v4" />
+										<path d="M15 16v4" />
+										<path d="M9 12v-4" />
+										<path d="M12 12v-1" />
+										<path d="M15 12v-2" />
+										<path d="M12 12v-1" />
+									</svg></div>
 								<a href="<?= base_url('Layanan/videotron') ?>">
 									<h4 class="service-heading">LED Videotron Outdoor</h4>
 								</a>
-								<p>Sewa LED Videotron Outdoor mulai dari harga 500.</p>
+								<p>LED Videotron Outdoor dengan harga terjangkau dan berkualitas.</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="full">
 							<div class="service_blog_inner">
-								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si3.png" alt="#" /></div>
+								<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<rect x="13" y="8" width="8" height="12" rx="1" />
+										<path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
+										<line x1="16" y1="9" x2="18" y2="9" />
+									</svg></div>
 								<a href="<?= base_url('Layanan/ledTvTouchscreen') ?>">
 									<h4 class="service-heading">LED TV Touchscreen</h4>
 								</a>
-								<p>Sewa LED / LCD TV murah mulai dari harga 600K.</p>
+								<p>LED / LCD TV murah dengan harga terjangkau dan berkualitas.</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="full">
 							<div class="service_blog_inner">
-								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si4.png" alt="#" /></div>
+								<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-analytics" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<rect x="3" y="4" width="18" height="12" rx="1" />
+										<line x1="7" y1="20" x2="17" y2="20" />
+										<line x1="9" y1="16" x2="9" y2="20" />
+										<line x1="15" y1="16" x2="15" y2="20" />
+										<path d="M8 12l3 -3l2 2l3 -3" />
+									</svg></div>
 								<a href="<?= base_url('Layanan/ledDisplay') ?>">
 									<h4 class="service-heading">LED Display Stand Touchscreen</h4>
 								</a>
-								<p>Sewa LED Stand Smart TV Touch screen mulai dari Rp. 1,4Jt.</p>
+								<p>LED Stand Smart TV Touch screen dengan harga terjangkau dan berkualitas.</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="full">
 							<div class="service_blog_inner">
-								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si5.png" alt="#" /></div>
+								<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-tv" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<rect x="3" y="7" width="18" height="13" rx="2" />
+										<polyline points="16 3 12 7 8 3" />
+									</svg></div>
 								<a href="<?= base_url('Layanan/projektor') ?>">
 									<h4 class="service-heading">Projector & Screen</h4>
 								</a>
-								<p>Sewa Projector dan Screen mulai dari harga Rp. 800K.</p>
+								<p>Projector dan Screen dengan harga terjangkau dan berkualitas.</p>
 							</div>
 						</div>
 					</div>
-					<!-- <div class="col-md-4">
-						<div class="full">
-							<div class="service_blog_inner">
-								<div class="icon text_align_left"><img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/si6.png" alt="#" /></div>
-								<h4 class="service-heading">Multimedia Lainnya</h4>
-								<p>Anda butuh sewa alat multimedia lainnya seperti laptop dan komputer?.</p>
-							</div>
-						</div>
-					</div> -->
 				</div>
 			</div>
 		</div>

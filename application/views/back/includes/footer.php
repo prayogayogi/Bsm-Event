@@ -5,7 +5,7 @@
 			<p>2020 &copy; BSM</p>
 		</div>
 		<div class="float-right">
-			<p>Crafted with <span class='text-danger'><i data-feather="heart"></i></span> by <a href="www.bsmevent.com">Bsm <?= date('Y'); ?></a></p>
+			<p>Crafted with <span class='text-danger'><i data-feather="heart"></i></span> by <a href="www.bsmevent.com">Bsm Event <?= date('Y'); ?></a></p>
 		</div>
 	</div>
 </footer>
