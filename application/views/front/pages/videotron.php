@@ -10,7 +10,7 @@
 							<ol class="breadcrumb">
 								<li><a href="<?= base_url('Home') ?>">Home</a></li>
 								<li class="active">Layanan</li>
-								<li class="active">Videotron</li>
+								<li class="active"><?= $nama['jenis_id']; ?></li>
 							</ol>
 						</div>
 					</div>

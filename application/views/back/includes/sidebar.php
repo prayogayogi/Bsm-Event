@@ -58,7 +58,7 @@
 						<li class="sidebar-item <?= (current_url() == base_url('Admin/Galery')) ? 'active' : '' ?>">
 							<a href="<?= base_url('Admin/Galery') ?>" class='sidebar-link'>
 								<i data-feather="image" width="20"></i>
-								<span>Galery</span>
+								<span>Galery </span>
 							</a>
 						</li>
 

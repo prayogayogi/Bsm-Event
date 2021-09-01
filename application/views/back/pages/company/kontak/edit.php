@@ -24,7 +24,7 @@
 
 							<div class="form-group">
 								<label for="jenis">Alamat</label>
-								<textarea name="alamat" id="jenis" class="form-control"><?= $index['alamat'] ?></textarea>
+								<input type="text" name="alamat" id="alamat" class="form-control" value="<?= $index['alamat'] ?>">
 								<?= form_error('alamat', '<small class="text-danger ml-2">', '</small>') ?>
 							</div>
 
@@ -68,8 +68,3 @@
 		</div>
 	</section>
 </div>
-
-
-<script>
-	CKEDITOR.replace('alamat');
-</script>

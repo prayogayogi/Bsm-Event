@@ -92,6 +92,15 @@ class LayananModel extends CI_Model
 		$this->db->set($data);
 		$this->db->where('slug', $slugid);
 		$this->db->update('tb_layanan');
+
+		$dataGalery = [
+			'jenis_id' => $this->input->post('jenis'),
+			'slug' => $slug
+		];
+
+		$this->db->set($dataGalery);
+		$this->db->where('slug', $slugid);
+		$this->db->update('tb_galery');
 	}
 
 	// Untuk destroy data layanan
@@ -122,9 +131,9 @@ class LayananModel extends CI_Model
 	}
 
 	//get data Videotron
-	public function getVideotron()
+	public function getVideotron($slug)
 	{
-		$this->db->where('slug', 'videotron-indoor-atau-outdoor');
+		$this->db->where('slug', $slug);
 		return $this->db->get('tb_galery');
 	}
 

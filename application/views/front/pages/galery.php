@@ -24,13 +24,13 @@
 <div class="section padding_layout_1 service_list">
 	<div class="container">
 		<div class="row">
-			<?php foreach ($index as $indexs) : ?>
+			<?php foreach ($galery as $galerys) : ?>
 				<div class="col-md-4 service_blog margin_bottom_50">
 					<div class="full">
-						<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/image/galery/') . $indexs['foto'] ?>" alt="#" /> </div>
+						<div class="service_img"> <img class="img-responsive" src="<?= base_url('public/image/galery/') . $galerys['foto'] ?>" alt="#" /> </div>
 						<div class="service_cont">
-							<!-- <h3 class="service_head"><?= $indexs['jenis_id'] ?></h3>
-							<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details/index/') . $indexs['slug']  ?>">View Product</a> </div> -->
+							<!-- <h3 class="service_head"><?= $galerys['jenis_id'] ?></h3>
+							<div class="bt_cont"> <a class="btn sqaure_bt" href="<?= base_url('Details/index/') . $galerys['slug']  ?>">View Product</a> </div> -->
 						</div>
 					</div>
 				</div>

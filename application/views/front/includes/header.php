@@ -55,7 +55,7 @@
 						<div class="full">
 							<div class="topbar-left">
 								<ul class="list-inline">
-									<li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">Villa mas indah blok C9 no,8 , Kota Bks, Jawa Barat </span> </li>
+									<li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight"><a href="#"><?= $getkontak['alamat']; ?></a> </span> </li>
 									<li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:jasaweb@gmail.com"><?= $getkontak['email']; ?></a></span> </li>
 								</ul>
 							</div>
@@ -92,12 +92,11 @@
 								<ul class="first-ul">
 									<li> <a class=" <?= (current_url() == base_url('Home')) ? 'active' : '' ?>" href="<?= base_url('Home') ?>">Home</a>
 									</li>
-									<li> <a class=" <?= (current_url() == base_url('Layanan')) || (current_url() == base_url('Layanan/videotron')) || (current_url() == base_url('Layanan/ledTvTouchscreen')) || (current_url() == base_url('Layanan/ledDisplay')) || (current_url() == base_url('Layanan/projektor')) ? 'active' : '' ?>" href="<?= base_url('Layanan') ?>">Layanan</a>
+									<li> <a class=" <?= (current_url() == base_url('Layanan')) ||  (current_url() == base_url('Layanan/master/') . $slug['slug']) ? 'active' : '' ?>" href="<?= base_url('Layanan') ?>">Layanan</a>
 										<ul>
-											<li><a href="<?= base_url('Layanan/videotron') ?>">Videotron</a></li>
-											<li><a href="<?= base_url('Layanan/ledTvTouchscreen') ?>">LED TV Touchscreen</a></li>
-											<li><a href="<?= base_url('Layanan/ledDisplay') ?>">LED Display Stand Touchscreen</a></li>
-											<li><a href="<?= base_url('Layanan/projektor') ?>">Projector</a></li>
+											<?php foreach ($index as $indexs) : ?>
+												<li><a href="<?= base_url('Layanan/master/') . $indexs['slug']; ?>"><?= $indexs['jenis']; ?></a></li>
+											<?php endforeach; ?>
 										</ul>
 									</li>
 									<li> <a class=" <?= (current_url() == base_url('Galery')) ? 'active' : '' ?>" href="<?= base_url('Galery') ?>">Galery</a>

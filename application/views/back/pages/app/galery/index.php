@@ -26,7 +26,7 @@
 				<table class='table table-striped' id="table1">
 					<thead>
 						<tr>
-							<th>Jenis Galery</th>
+							<th>Jenis Galery Atau Product</th>
 							<th>Foto</th>
 							<th>Action</th>
 						</tr>

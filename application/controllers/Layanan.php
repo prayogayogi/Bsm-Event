@@ -22,50 +22,17 @@ class Layanan extends CI_Controller
 	}
 
 	// Untuk videotron
-	public function videotron()
+	public function master($slug)
 	{
 		$data['title'] = "Layanan Videotron";
-		$data['getVideotron'] = $this->LayananModel->getVideotron()->result_array();
+		$data['index'] = $this->LayananModel->index();
+		$data['slug'] = $this->LayananModel->getDetail($slug)->row_array();
+		$data['nama'] = $this->LayananModel->getVideotron($slug)->row_array();
+		$data['getVideotron'] = $this->LayananModel->getVideotron($slug)->result_array();
 		$data['getCilent'] = $this->CilentModel->index();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
 		$this->load->view('front/includes/header', $data);
 		$this->load->view('front/pages/videotron', $data);
-		$this->load->view('front/includes/footer', $data);
-	}
-
-	// Untuk videotron
-	public function ledTvTouchscreen()
-	{
-		$data['title'] = "Layanan Led Tv Touchscreen";
-		$data['getLedTouc'] = $this->LayananModel->getLedTouc()->result_array();
-		$data['getCilent'] = $this->CilentModel->index();
-		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
-		$this->load->view('front/includes/header', $data);
-		$this->load->view('front/pages/ledTvTouchscreen', $data);
-		$this->load->view('front/includes/footer', $data);
-	}
-
-	// Untuk videotron
-	public function ledDisplay()
-	{
-		$data['title'] = "Layanan Led Display";
-		$data['getLedDisplay'] = $this->LayananModel->getLedDisplay()->result_array();
-		$data['getCilent'] = $this->CilentModel->index();
-		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
-		$this->load->view('front/includes/header', $data);
-		$this->load->view('front/pages/ledDisplay', $data);
-		$this->load->view('front/includes/footer', $data);
-	}
-
-	// Untuk videotron
-	public function projektor()
-	{
-		$data['title'] = "Projektor";
-		$data['projektor'] = $this->LayananModel->projektor()->result_array();
-		$data['getCilent'] = $this->CilentModel->index();
-		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
-		$this->load->view('front/includes/header', $data);
-		$this->load->view('front/pages/projektor', $data);
 		$this->load->view('front/includes/footer', $data);
 	}
 }

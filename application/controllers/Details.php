@@ -13,6 +13,8 @@ class Details extends CI_Controller
 	public function index($slug)
 	{
 		$data['title'] = "Detail Product";
+		$data['index'] = $this->LayananModel->index();
+		$data['slug'] = ['slug' => 'video'];
 		$data['getDetail'] = $this->LayananModel->getDetail($slug)->row_array();
 		$data['getJoin'] = $this->LayananModel->getJoin($slug)->result_array();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
@@ -26,6 +28,8 @@ class Details extends CI_Controller
 	public function detailGalery($slug, $foto)
 	{
 		$data['title'] = "Detail Product";
+		$data['index'] = $this->LayananModel->index();
+		$data['slug'] = ['slug' => 'video'];
 		$data['getDetail'] = $this->GaleryModel->getDetail($foto)->row_array();
 		$data['getJoin'] = $this->LayananModel->getJoin($slug)->result_array();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();

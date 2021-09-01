@@ -6,9 +6,9 @@
 				<!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
 				<div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
 					<ul>
-						<li data-index="rs-1812" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="<?= base_url('public/assetFrontEnd/') ?>images/it_service/1test_bg.png" data-rotate="0" data-saveperformance="off" data-title="Computer Services" data-description="">
+						<li data-index="rs-1812" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="<?= base_url('public/assetFrontEnd/') ?>images/it_service/1test_bg.jpg" data-rotate="0" data-saveperformance="off" data-title="Computer Services" data-description="">
 							<!-- MAIN IMAGE -->
-							<img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/1test_bg.png" alt="#" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+							<img src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/1test_bg.jpg" alt="#" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 							<!-- LAYERS -->
 							<!-- LAYER NR. BG -->
 							<div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" id="slide-270-layer-1012" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="s:300;s:300;" data-start="750" data-basealign="slide" data-responsive_offset="on" data-responsive="off" style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
@@ -79,7 +79,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
-				<div class="full text_align_center"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/post-06.jpg" alt="#" /> </div>
+				<div class="full text_align_center"> <img class="img-responsive" src="<?= base_url('public/assetFrontEnd/') ?>images/it_service/bgPhoto.png" alt="#" /> </div>
 			</div>
 		</div>
 	</div>
@@ -154,193 +154,35 @@
 			<div class="row">
 				<div class="col-md-8">
 					<div class="row">
-						<div class="col-md-4">
-							<div class="full">
-								<div class="service_blog_inner">
-									<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-											<rect x="3" y="4" width="18" height="12" rx="1" />
-											<line x1="7" y1="20" x2="17" y2="20" />
-											<line x1="9" y1="16" x2="9" y2="20" />
-											<line x1="15" y1="16" x2="15" y2="20" />
-										</svg></div>
-									<a href="<?= base_url('Layanan/videotron') ?>">
-										<h4 class="service-heading">LED Videotron Indoor</h4>
-									</a>
-									<p>LED Videotron Indoor dengan harga terjangkau dan berkualitas.</p>
+						<?php foreach ($index as $indexs) : ?>
+							<div class="col-md-4">
+								<div class="full">
+									<div class="service_blog_inner">
+										<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-analytics" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<rect x="3" y="4" width="18" height="12" rx="1" />
+												<path d="M7 20h10" />
+												<path d="M9 16v4" />
+												<path d="M15 16v4" />
+												<path d="M9 12v-4" />
+												<path d="M12 12v-1" />
+												<path d="M15 12v-2" />
+												<path d="M12 12v-1" />
+											</svg></div>
+										<a href="<?= base_url('Layanan/master/') . $indexs['slug']; ?>">
+											<h4 class="service-heading"><?= $indexs['jenis']; ?></h4>
+										</a>
+										<p><?= $indexs['jenis']; ?>.</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="full">
-								<div class="service_blog_inner">
-									<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-analytics" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-											<rect x="3" y="4" width="18" height="12" rx="1" />
-											<path d="M7 20h10" />
-											<path d="M9 16v4" />
-											<path d="M15 16v4" />
-											<path d="M9 12v-4" />
-											<path d="M12 12v-1" />
-											<path d="M15 12v-2" />
-											<path d="M12 12v-1" />
-										</svg></div>
-									<a href="<?= base_url('Layanan/videotron') ?>">
-										<h4 class="service-heading">LED Videotron Outdoor</h4>
-									</a>
-									<p>LED Videotron Outdoor dengan harga terjangkau dan berkualitas.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="full">
-								<div class="service_blog_inner">
-									<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-											<rect x="13" y="8" width="8" height="12" rx="1" />
-											<path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
-											<line x1="16" y1="9" x2="18" y2="9" />
-										</svg></div>
-									<a href="<?= base_url('Layanan/ledTvTouchscreen') ?>">
-										<h4 class="service-heading">LED TV Touchscreen</h4>
-									</a>
-									<p>LED / LCD TV murah dengan harga terjangkau dan berkualitas.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="full">
-								<div class="service_blog_inner">
-									<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-analytics" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-											<rect x="3" y="4" width="18" height="12" rx="1" />
-											<line x1="7" y1="20" x2="17" y2="20" />
-											<line x1="9" y1="16" x2="9" y2="20" />
-											<line x1="15" y1="16" x2="15" y2="20" />
-											<path d="M8 12l3 -3l2 2l3 -3" />
-										</svg></div>
-									<a href="<?= base_url('Layanan/ledDisplay') ?>">
-										<h4 class="service-heading">LED Display Stand Touchscreen</h4>
-									</a>
-									<p>LED Stand Smart TV Touch screen dengan harga terjangkau dan berkualitas.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="full">
-								<div class="service_blog_inner">
-									<div class="icon text_align_left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-tv" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-											<rect x="3" y="7" width="18" height="13" rx="2" />
-											<polyline points="16 3 12 7 8 3" />
-										</svg></div>
-									<a href="<?= base_url('Layanan/projektor') ?>">
-										<h4 class="service-heading">Projector & Screen</h4>
-									</a>
-									<p>Projector dan Screen dengan harga terjangkau dan berkualitas.</p>
-								</div>
-							</div>
-						</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- end section -->
-
-	<div class="section padding_layout_1 service_list" style="display: none;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="full">
-						<div class="main_heading text_align_center">
-							<h2>Daftar Harga Sewa LED Videotron</h2>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<!-- full price table -->
-					<div class="price_table row" style="margin-top: 0;">
-						<!-- price table one -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-							<div class="price_table_inner margin_bottom_30">
-								<div class="price_head text_align_center">
-									<h5>Starter</h5>
-									<p>The best to start</p>
-								</div>
-								<div class="price_contant">
-									<div class="center">
-										<p class="price_amount">$ <span class="price_no">180</span>/Per Month</p>
-									</div>
-									<div class="price_cont text_align_center">
-										<p>Fast service</p>
-										<p>Safe payments</p>
-										<p>Fully trained employees</p>
-										<p>Sustainable products</p>
-									</div>
-								</div>
-								<div class="price_bottom">
-									<div class="center"> <a href="#" class="btn dark_gray_bt">Get Started</a> </div>
-								</div>
-							</div>
-						</div>
-						<!-- end price table one -->
-						<!-- price table two -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 price_table_active">
-							<div class="row">
-								<div class="price_table_inner margin_bottom_30">
-									<div class="price_head text_align_center white_fonts">
-										<h5>Professional</h5>
-										<p>The best to start</p>
-									</div>
-									<div class="price_contant">
-										<div class="center">
-											<p class="price_amount">$ <span class="price_no">210</span>/Per Month</p>
-										</div>
-										<div class="price_cont text_align_center">
-											<p>Fast service</p>
-											<p>Safe payments</p>
-											<p>Fully trained employees</p>
-											<p>Sustainable products</p>
-										</div>
-									</div>
-									<div class="price_bottom">
-										<div class="center"> <a href="#" class="btn main_bt">Get Started</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end price table two -->
-						<!-- price table three -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-							<div class="price_table_inner">
-								<div class="price_head text_align_center">
-									<h5>Business</h5>
-									<p>The best to start</p>
-								</div>
-								<div class="price_contant">
-									<div class="center">
-										<p class="price_amount">$ <span class="price_no">240</span>/Per Month</p>
-									</div>
-									<div class="price_cont text_align_center">
-										<p>Fast service</p>
-										<p>Safe payments</p>
-										<p>Fully trained employees</p>
-										<p>Sustainable products</p>
-									</div>
-								</div>
-								<div class="price_bottom">
-									<div class="center"> <a href="#" class="btn dark_gray_bt">Get Started</a> </div>
-								</div>
-							</div>
-						</div>
-						<!-- end price table three -->
-					</div>
-					<!-- end full price table -->
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<!-- section -->
 	<div class="section padding_layout_1">
@@ -378,8 +220,9 @@
 		</div>
 	</div>
 	<!-- end section -->
+
 	<!-- section -->
-	<div class="section padding_layout_1 light_silver gross_layout right_gross_layout">
+	<div class="section padding_layout_1 light_silver gross_layout right_gross_layout" style="display: none;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">

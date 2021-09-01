@@ -14,6 +14,7 @@ class Home extends CI_Controller
 	{
 		$data['title'] = "Home";
 		$data['index'] = $this->LayananModel->index();
+		$data['slug'] = ['slug' => 'video'];
 		$data['getCilent'] = $this->CilentModel->index();
 		$data['getkontak'] = $this->CompanyModel->getKontak()->row_array();
 		$this->load->view('front/includes/header', $data);

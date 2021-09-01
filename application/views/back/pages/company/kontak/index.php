@@ -87,7 +87,7 @@
 
 								<div class="form-group">
 									<label for="jenis">Alamat</label>
-									<textarea name="alamat" id="jenis" cols="10" rows="7" class="form-control"></textarea>
+									<input type="text" name="alamat" id="alamat" class="form-control" placeholder="Masukan alamat">
 									<?= form_error('alamat', '<small class="text-danger ml-2">', '</small>') ?>
 								</div>
 
@@ -133,8 +133,3 @@
 	</div>
 </div>
 <!-- Akhir modal store data kontak -->
-
-
-<script>
-	CKEDITOR.replace('alamat');
-</script>
