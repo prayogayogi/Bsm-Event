@@ -96,6 +96,10 @@ class UserAppModel extends CI_Model
 			'slug' => $slug,
 			'created_at' => date('Y-m-d')
 		];
+		$session = [
+			'email' => $this->input->post('email', TRUE),
+		];
+		$this->session->set_userdata($session);
 
 		$this->db->set($data);
 		$this->db->where('slug', $slugid);

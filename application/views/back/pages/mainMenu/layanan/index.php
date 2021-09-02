@@ -88,6 +88,7 @@
 								<div class="form-group">
 									<label for="price">price Layanan</label>
 									<input type="text" name="price" class="form-control" id="price" placeholder="Harga Layanan" value="<?= set_value('price'); ?>" autocomplete="off" autofocus>
+									<p><small class="text-muted">Masukan Angkanya Saja, Tanpa Titik (.) Dan Rupiyah (Rp)</small></p>
 									<?= form_error('price', '<small class="text-danger ml-2">', '</small>') ?>
 								</div>
 

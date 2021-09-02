@@ -31,6 +31,7 @@
 							<div class="form-group">
 								<label for="price">price Layanan</label>
 								<input type="text" name="price" class="form-control" id="price" value="<?= $index['price'] ?>" autocomplete="off">
+								<p><small class="text-muted">Masukan Angkanya Saja, Tanpa Titik (.) Dan Rupiyah (Rp)</small></p>
 								<?= form_error('price', '<small class="text-danger ml-2">', '</small>') ?>
 							</div>
 

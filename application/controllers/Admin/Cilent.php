@@ -84,7 +84,7 @@ class Cilent extends CI_Controller
 				<span aria-hidden="true">&times;</span>
 			</button>
 		</div>');
-			redirect('Admin/Cilent');
+			redirect('Admin/Cilent/index');
 		}
 	}
 
