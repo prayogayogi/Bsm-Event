@@ -148,11 +148,10 @@
 					<div class="side_bar_blog">
 						<h4>LAYANAN KAMI</h4>
 						<div class="categary">
-							<ul>
-								<li><a href="<?= base_url('Layanan/videotron') ?>"><i class="fa fa-angle-right"></i> Videotron Indoor</a></li>
-								<li><a href="<?= base_url('Layanan/ledTvTouchscreen') ?>"><i class="fa fa-angle-right"></i> LED TV Touchscreen</a></li>
-								<li><a href="<?= base_url('Layanan/ledDisplay') ?>"><i class="fa fa-angle-right"></i> LED Display Stand Touchscreen</a></li>
-								<li><a href="<?= base_url('Layanan/projektor') ?>"><i class="fa fa-angle-right"></i> Projector</a></li>
+						<ul>
+								<?php foreach ($index as $indexs) : ?>
+									<li><a href="<?= base_url('Layanan/master/') . $indexs['slug']; ?>"><i class="fa fa-angle-right"></i><?= $indexs['jenis']; ?></a></li>
+								<?php endforeach; ?>
 							</ul>
 						</div>
 					</div>

@@ -33,10 +33,17 @@ class GaleryModel extends CI_Model
 			}
 		}
 
+		// Untuk bikin slug
+		$title = trim(strtolower($this->input->post('jenis', TRUE)));
+		$out = explode(" ", $title);
+		$slug = implode("-", $out);
+
 		$data = [
 			'jenis_id' => $this->input->post('jenis', TRUE),
 			'foto' => $files,
+			'slug' => $slug,
 		];
+
 		$this->db->set($data);
 		$this->db->insert('tb_galery');
 	}
@@ -69,9 +76,14 @@ class GaleryModel extends CI_Model
 				echo "error";
 			}
 		}
+		// Untuk bikin slug
+		$title = trim(strtolower($this->input->post('jenis', TRUE)));
+		$out = explode(" ", $title);
+		$slug = implode("-", $out);
 
 		$data = [
 			'jenis_id' => $this->input->post('jenis'),
+			'slug' => $slug,
 		];
 
 		$this->db->set($data);
